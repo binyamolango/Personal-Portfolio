@@ -10,6 +10,17 @@ img {
   max-width: 100%;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -23,9 +34,13 @@ img {
   margin: 19px 14px 0 0;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
+.line {
+  border-bottom: 2px solid #1A2236;
+  border-left: 20px solid #1A2236;
+}
+
+.space-between {
+  margin: 4px 0;
 }
 
 .headline-name {
@@ -62,4 +77,8 @@ img {
   width: 100%;
   border: none;
   padding: 12px 0;
+}
+
+.headline-bottom-design {
+  margin: 32.31px auto;
 }
