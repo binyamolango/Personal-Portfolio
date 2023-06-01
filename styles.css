@@ -15,6 +15,10 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -31,8 +35,12 @@ button {
   list-style: none;
 }
 
-.nav-menu {
+.nav {
   margin: 19px 14px 0 0;
+}
+
+.nav button {
+  background-color: white;
 }
 
 .line {
@@ -90,7 +98,11 @@ button {
 }
 
 .headline-bottom-design {
+  background-image: url("image_geometry_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 160px;
   margin: 32.31px auto;
   width: 100%;
-  max-width: 600px;
+  /*max-width: 600px; */
 }
