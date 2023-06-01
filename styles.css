@@ -16,14 +16,10 @@ img {
   max-width: 1000px;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav {
+.row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -77,6 +73,17 @@ img {
   width: 100%;
   border: none;
   padding: 12px 0;
+  cursor: pointer;
+}
+
+.headline-btn:hover {
+  color: #1A2236;
+  background: white;
+  border: 1px solid #1A2236;
+}
+
+.headline-btn:active {
+  border: 2px solid #1A2236;
 }
 
 .headline-bottom-design {
