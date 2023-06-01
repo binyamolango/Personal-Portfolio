@@ -10,6 +10,11 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -71,9 +76,7 @@ img {
   color: #fff;
   background: #1a2236;
   width: 100%;
-  border: none;
   padding: 12px 0;
-  cursor: pointer;
 }
 
 .headline-btn:hover {
