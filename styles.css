@@ -10,9 +10,16 @@ img {
   max-width: 100%;
 }
 
-.nav {
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -21,4 +28,64 @@ img {
 
 .nav-menu {
   margin: 19px 14px 0 0;
+}
+
+.line {
+  border-bottom: 2px solid #1a2236;
+  border-left: 20px solid #1a2236;
+}
+
+.space-between {
+  margin: 4px 0;
+}
+
+.headline-name {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 100%;
+  margin: 30px 0 0 0;
+}
+
+.headline-desc {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  margin: 17px 0 22px 0;
+}
+
+.darkblue {
+  color: #1a2236;
+  font-weight: 400;
+}
+
+.headline-btn {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #1a2236;
+  width: 100%;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.headline-btn:hover {
+  color: #1a2236;
+  background: white;
+  border: 1px solid #1a2236;
+}
+
+.headline-btn:active {
+  border: 2px solid #1a2236;
+}
+
+.headline-bottom-design {
+  margin: 32.31px auto;
 }
