@@ -122,7 +122,7 @@ a {
   margin: -5px 0 0 0;
 }
 
-.workDesc p {
+.workDesc h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -190,11 +190,19 @@ a {
 }
 
 .language {
-  background-image: url(Background-img/Language.svg);
+  background-image: url(Background-img/framework.svg);
+}
+
+.ic-L {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  left: 217px;
+  top: 3363px;
 }
 
 .framework {
-  background-image: url(Background-img/framework.svg);
+  background-image: url(Background-img/Language.svg);
 }
 
 .skill {
@@ -222,7 +230,7 @@ a {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  padding: 50px 0 0 0;
+  padding: 25px 0 0 0;
 }
 
 .skill-pack li {
@@ -230,6 +238,10 @@ a {
   font-size: 18px;
   line-height: 27px;
   letter-spacing: -0.0525em;
+}
+
+.skill-pack li:first-of-type {
+  padding-top: 21px;
 }
 
 .form label {
