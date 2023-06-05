@@ -122,7 +122,8 @@ a {
   margin: -5px 0 0 0;
 }
 
-.workDesc h3 {
+.workDesc h3,
+.workDesc p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -190,27 +191,23 @@ a {
 }
 
 .language {
-  background-image: url(Background-img/framework.svg);
-}
-
-.ic-L {
-  position: absolute;
-  width: 102px;
-  height: 102px;
-  left: 217px;
-  top: 3363px;
+  background: #1c528a;
+  background-image: url(Background-img/ic_languages_mob@2x.svg);
 }
 
 .framework {
-  background-image: url(Background-img/Language.svg);
+  background: #e2505c;
+  background-image: url(Background-img/ic_framework.svg);
 }
 
 .skill {
-  background-image: url(Background-img/skills.svg);
+  background: #febf52;
+  background-image: url(Background-img/ic_skills.svg);
 }
 
 .no-repeat {
   background-repeat: no-repeat;
+  background-position: bottom right;
   padding-left: 50px;
   width: 289px;
   height: 289px;
@@ -224,6 +221,7 @@ a {
 
 .skill-pack ul {
   padding: 21px 0 80px 17px;
+  list-style-position: inside;
 }
 
 .skill-pack h3 {
