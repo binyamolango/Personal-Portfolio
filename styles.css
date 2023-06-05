@@ -24,6 +24,9 @@ a {
   width: 90%;
   margin: 0 auto;
   max-width: 800px;
+
+  /* border: 2px solid blue; */
+
 }
 
 .row {
@@ -115,11 +118,18 @@ a {
 
 .work-cont {
   margin: 0 auto;
+  width: 100%;
+}
+
+.work-cont img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .workDesc {
   background: #1a2236;
-  margin: -5px 0 0 0;
+  margin-top: -0.8px;
 }
 
 .workDesc h3,
@@ -209,7 +219,7 @@ a {
   background-repeat: no-repeat;
   background-position: bottom right;
   padding-left: 50px;
-  width: 289px;
+  width: 90%;
   height: 289px;
 }
 
