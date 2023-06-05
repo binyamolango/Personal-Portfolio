@@ -296,11 +296,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 14px;
-
   align-items: center;
   margin-bottom: 25px;
 }
-
 
 .foot-row button {
   background: none;
