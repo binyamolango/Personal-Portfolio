@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+.invisible {
+  display: none;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -326,4 +330,40 @@ a {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
+}
+
+@media screen and (min-width: 768px) {
+  .visible {
+    display: none;
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  .invisible {
+    display: block;
+    padding: 38px 0;
+    box-shadow: 0px 0.5px 0px #dddfe6;
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #1a2236;
+  }
 }

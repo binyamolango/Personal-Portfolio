@@ -12,18 +12,31 @@
 </head>
 <body>
     <main>
-        <header class="header row">
-            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
-            <nav class="nav">        
-                <button>
-                    <div class="line"></div>
-                    <div class="line space-between"></div>
-                    <div class="line"></div>
-                </button>
-            </nav>
+        <header class="header">
+            <div class="row visible">
+                <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
+                <nav class="nav">        
+                    <button>
+                        <div class="line"></div>
+                        <div class="line space-between"></div>
+                        <div class="line"></div>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="invisible">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#hello" class="nav-link">Hello</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <section class="headline row">
+        <section class="headline row" id="hello">
             <div class="container">
                 <h1 class="title darkblue">Binyam Y. Olango</h1>
                 <p class="par-desc darkblue">Hello! I am a software developer! I can help you build a product, feature or website. 
@@ -35,7 +48,7 @@
             <div class="headline-bottom-design"></div>
         </section>
 
-        <section class="work">
+        <section class="work" id="portfolio">
             <div class="container">
                 <h2 class="title darkblue">Projects</h2>
             </div>
@@ -147,7 +160,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="title darkblue">About</h2>
                 <p class="par-desc darkblue">I can help you build a product , feature or website Look through some of my work and experience! 
@@ -185,7 +198,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
             <div class="form container form-col">
                 <h2 class="title darkblue">Get started</h2>
