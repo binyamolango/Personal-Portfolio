@@ -292,19 +292,21 @@ a {
   text-align: center;
 }
 
-.footer-row {
+.foot-row {
   display: flex;
   justify-content: center;
   gap: 14px;
+
   align-items: center;
   margin-bottom: 25px;
 }
 
-.footer-row button {
+
+.foot-row button {
   background: none;
   border: none;
 }
 
-.footer-row button:active {
+.foot-row button:active {
   border: 2px solid #1a2236;
 }
