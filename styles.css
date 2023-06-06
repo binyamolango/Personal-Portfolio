@@ -373,6 +373,7 @@ a {
   .head-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 210px;
   }
 
   .headline-bottom-design {
@@ -390,6 +391,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(img/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .headline .sub-cont {
@@ -417,5 +421,16 @@ a {
 
   .sub-cont .btn {
     width: 50%;
+  }
+
+  .grid {
+    border: 2px solid black;
+    margin: 0 auto;
+    grid-template-columns: 32.27% 22.21% 13.25% 32.27%;
+    grid-template-rows: 33.96% 3.16% 1.82% 11.56% 4.87% 11.56% 16.73% 16.43%;
+  }
+
+  .grid .work-cont {
+    border: 4px solid red;
   }
 }
