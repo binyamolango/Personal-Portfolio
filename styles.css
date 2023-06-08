@@ -752,11 +752,14 @@ main {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 50px;
   }
 
   .col {
     width: 45%;
+  }
+
+  .col + .col {
+    margin-left: 50px;
   }
 
   .col2 {
