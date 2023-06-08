@@ -623,4 +623,85 @@ main {
   .workBtn:active {
     border: 2.5px solid #fff;
   }
+
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 80px 0 160px;
+    min-width: 1360px;
+    max-width: 1550px;
+    margin-top: 160px;
+  }
+
+  .about .container {
+    padding-top: 28px;
+    width: 100%;
+    margin-left: 96px;
+  }
+
+  .about .title {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .about .par-desc {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about .btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .skill-pack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: 80%;
+  }
+
+  .language {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 289px;
+    padding-left: 40px;
+  }
+
+  .framework {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 289px;
+    padding-left: 40px;
+  }
+
+  .skill {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 289px;
+    padding-left: 40px;
+  }
+
+  .dot {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url(Background-img/image_dots_with_teal.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 289px;
+    height: 289px;
+    margin-bottom: -5px;
+  }
 }
