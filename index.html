@@ -217,20 +217,30 @@
         </section>
 
         <section class="contact" id="contact">
-            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
+            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img visible"></a>
+            <div class="geo-img invisible"></div>
             <div class="form container form-col">
                 <h2 class="title darkblue">Get started</h2>
                 <p class="par-desc">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
                 <form action="https://formspree.io/f/xyyaqjqn" method="post">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required>
-                    <label for="email">Your email</label>
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                    <label for="msg">Your message</label>
-                    <textarea name="text" id="msg" cols="30" rows="10" placeholder="Enter your message here" maxlength="500" required></textarea>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required>
+                        </div>
+                        <div class="col">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="col2">
+                            <label for="msg">Your message</label>
+                            <textarea name="text" id="msg" cols="30" rows="10" placeholder="Enter your message here" maxlength="500" required></textarea>
+                        </div>
+                    </div>
                     <button type="submit" class="btn" name="submit">Start collaboration</button>
                 </form>
             </div>
+            <div class="geo2-img invisible"></div>
         </section>
 
         <footer class="footer workDesc">

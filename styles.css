@@ -704,4 +704,73 @@ main {
     height: 289px;
     margin-bottom: -5px;
   }
+
+  .contact {
+    background: #f9f9fa;
+    background-image: url(img/image-geometry_6.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-top: 148px;
+  }
+
+  .contact .container {
+    width: 45%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 128px;
+    margin-bottom: -175px;
+  }
+
+  .contact .title {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;    
+    text-align: center;
+  }
+
+  .contact .par-desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    padding: 20px 0;
+  }
+
+  .geo2-img {
+    background-image: url(Background-img/image-geometry_7.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 350px;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    width: 48%;
+  }
+
+  .col2 {
+    width: 100%;
+  }
+
+  form .btn {
+    width: 50%;
+    margin-left: 140px;
+    margin-top: 40px;
+    padding: 20px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
 }
