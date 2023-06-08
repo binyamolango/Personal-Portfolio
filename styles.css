@@ -711,13 +711,13 @@ main {
     background-position: left top;
     background-repeat: no-repeat;
     margin-top: 148px;
-    min-width: 1490px;
+    min-width: 1496px;
   }
 
   .contact .container {
     width: 45%;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 670px;
     padding-top: 128px;
     margin-bottom: -175px;
   }
@@ -750,16 +750,17 @@ main {
 
   .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 50px;
   }
 
   .col {
-    width: 48%;
+    width: 45%;
   }
 
   .col2 {
-    width: 100%;
+    width: 98%;
   }
 
   form .btn {
