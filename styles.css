@@ -711,6 +711,7 @@ main {
     background-position: left top;
     background-repeat: no-repeat;
     margin-top: 148px;
+    min-width: 1490px;
   }
 
   .contact .container {
@@ -724,7 +725,7 @@ main {
   .contact .title {
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 110px;
     line-height: 100%;    
     text-align: center;
@@ -772,5 +773,40 @@ main {
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+  }
+
+  .footer {
+    margin-top: -1px;
+    height: 125px;
+    min-width: 1490px;
+  }
+
+  .footer-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .foot-row {
+    width: 50%;
+    margin: 0;
+  }
+
+  .footer .social-list {
+    width: 90%;
+  }
+
+  .footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 14px;
   }
 }
