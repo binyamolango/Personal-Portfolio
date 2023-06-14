@@ -312,11 +312,7 @@ main {
 .footer-text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #92dcdc;
-  text-align: center;
+
 }
 
 .foot-row {
@@ -326,6 +322,7 @@ main {
   align-items: center;
   margin-bottom: 25px;
 }
+
 
 .foot-row button {
   background: none;
