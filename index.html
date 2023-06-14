@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal-Portfolio-Page</title>
+    <link rel="shortcut icon" type="image/svg" href="img/image_geometry_1.svg">
+    <title>Portfolio of Binyam Yohannes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
@@ -12,147 +13,189 @@
 </head>
 <body>
     <main>
-        <header class="header row">
-            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
-            <nav class="nav">        
-                <button>
-                    <div class="line"></div>
-                    <div class="line space-between"></div>
-                    <div class="line"></div>
-                </button>
-            </nav>
+        <header class="header">
+            <div class="row visible">
+                <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
+                <nav class="nav">        
+                    <button>
+                        <div class="line"></div>
+                        <div class="line space-between"></div>
+                        <div class="line"></div>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="invisible">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#hello" class="nav-link">Hello</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <section class="headline row">
+        <section class="headline head-row" id="hello">
             <div class="container">
-                <h1 class="title darkblue">Binyam Y. Olango</h1>
-                <p class="par-desc darkblue">Hello! I am a software developer! I can help you build a product, feature or website. 
-                    Take a look at my work.<br><br>If you like what you see and have a project you need coded, 
-                    don’t hesitate to contact me.</p>
-                <button class="btn">Start collaboration</button>
+                <div class="sub-cont">
+                    <h1 class="title darkblue">Binyam Yohannes</h1>
+                    <p class="par-desc darkblue">Hello! I am a software developer! I can help you build a product, feature or website. 
+                        Take a look at my work.<br><br>If you like what you see and have a project you need coded, 
+                        don’t hesitate to contact me.</p>
+                    <a href="#contact"><button class="btn">Start collaboration</button></a>
+                </div>
             </div>
 
             <div class="headline-bottom-design"></div>
         </section>
 
-        <section class="work">
-            <div class="container">
-                <h2 class="title darkblue">Projects</h2>
-            </div>
+        <section class="work" id="portfolio">
             <div class="grid">
-                <figure class="work1 work-cont">
-                    <img src="proj-img/Rectangle 21.svg" alt="work1-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <p>Project name goes here</p>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn"><div class="btn-cont">
-                                <p>See this project</p>
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                            </div></button>
-                        </div>
-                    </figcaption>
+                <div class="container work0">
+                    <h2 class="title darkblue">Projects</h2>
+                </div>
+                <figure class="work1 work-cont work1-fig">
+                    <a href="proj1-desc.html"><img src="proj-img/Rectangle 21.svg" alt="work1-image" class="work-img"></a>
                 </figure>
-                <figure class="work2 work-cont">
-                    <img src="proj-img/Rectangle 21 (5).svg" alt="work2-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <h3>Project name goes here</h3>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn"><div class="btn-cont">
-                                <p>See this project</p>
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                            </div></button>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="work3 work-cont">
-                    <img src="proj-img/Rectangle 21 (1).svg" alt="work3-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <h3>Project name goes here</h3>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn"><div class="btn-cont">
-                                <p>See this project</p>
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                            </div></button>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="work4 work-cont">
-                    <img src="proj-img/Rectangle 21 (2).svg" alt="work4-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <h3>Project name goes here</h3>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn"><div class="btn-cont">
-                                <p>See this project</p>
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                            </div></button>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="work5 work-cont">
-                    <img src="proj-img/Rectangle 21 (3).svg" alt="work5-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <h3>Project name goes here</h3>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn"><div class="btn-cont">
-                                <p>See this project</p>
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                            </div></button>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="work6 work-cont">
-                    <img src="proj-img/Rectangle 21 (4).svg" alt="work6-image" class="work-img">
-                    <figcaption class="workDesc">
-                        <div class="container">
-                            <h3>Project name goes here</h3>
-                            <ul class="workDesc-list">
-                                <li class="workDesc-item">HTML/CSS</li>
-                                <li class="workDesc-item">Ruby on Rails</li>
-                                <li class="workDesc-item">Javascript</li>
-                            </ul>
-                            <button class="workBtn">
-                                <div class="btn-cont">
-                                    <p>See this project</p>
-                                    <img src="img/arrow.svg" alt="arrow-image" class="arrow-img">
-                                </div>
+                <div class="work1 work-cont workDesc work1-desc">
+                    <div class="container">
+                        <h3>Project 1</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item">Javascript</li>
+                        </ul>
+                        <a href="proj1-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">    
                             </button>
-                        </div>
-                    </figcaption>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="work2 work-cont work2-fig">
+                    <a href="proj2-desc.html"><img src="proj-img/Rectangle 21 (5).svg" alt="work2-image" class="work-img"></a>
                 </figure>
+                <div class="work2 work-cont workDesc work2-desc visible">
+                    <div class="container">
+                        <h3>Project 2</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item">Javascript</li>
+                        </ul>
+                        <a href="proj2-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="work3 work-cont work3-fig">
+                    <a href="proj3-desc.html"><img src="proj-img/Rectangle 21 (1).svg" alt="work3-image" class="work-img"></a>
+                </figure>
+                <div class="work3 work-cont workDesc work3-desc visible">
+                    <div class="container">
+                        <h3>Project 3</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item">Javascript</li>
+                        </ul>
+                        <a href="proj3-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="work4 work-cont work4-fig">
+                    <a href="proj4-desc.html"><img src="proj-img/Rectangle 21 (2).svg" alt="work4-image" class="work-img"></a>
+                </figure>
+                <div class="work4 work-cont workDesc work4-desc visible">
+                    <div class="container">
+                        <h3>Project 4</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item">Javascript</li>
+                        </ul>
+                        <a href="proj4-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="work5 work-cont work5-fig">
+                    <a href="proj5-desc.html"><img src="proj-img/Rectangle 21 (3).svg" alt="work5-image" class="work-img"></a>
+                </figure>
+                <div class="work5 work-cont workDesc work5-desc visible">
+                    <div class="container">
+                        <h3>Project 5</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item">Javascript</li>
+                        </ul>
+                        <a href="proj5-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="work6 work-cont work6-fig">
+                    <a href="proj6-desc.html"><img src="proj-img/Rectangle 21 (4).svg" alt="work6-image" class="work-img"></a>
+                </figure>
+                <div class="work6 work-cont workDesc work6-desc">
+                    <div class="container">
+                        <h3>Project 6</h3>
+                        <ul class="workDesc-list">
+                            <li class="workDesc-item">HTML/CSS</li>
+                            <li class="workDesc-item">Ruby on Rails</li>
+                            <li class="workDesc-item visible">Javascript</li>
+                            <li class="workDesc-item invisible"><button>+1</button></li>
+                        </ul>
+                        <a href="proj6-desc.html">
+                            <button class="workBtn btn-cont">
+                                See this project
+                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
+                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="geo1 invisible"></div>
+                <div class="geo2 invisible"></div>
+                <div class="geo3 invisible"></div>
+                <div class="geo4 invisible"></div>
+                <div class="geo5 invisible"></div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="title darkblue">About</h2>
                 <p class="par-desc darkblue">I can help you build a product , feature or website Look through some of my work and experience! 
                     If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                <button class="btn">Get my CV </button>
+                <button class="btn">Get my CV <img src="img/Group 61.svg" alt="download-image" class="cv-img invisible"></button>
             </div>
             <div class="skill-pack">
                 <div class="language no-repeat"> 
@@ -182,41 +225,53 @@
                         <li class="skill-item">Web Development</li>
                     </ul>
                 </div>
+                <div class="dot invisible"></div>
             </div>
         </section>
-        
-        <section class="contact">
-            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
+
+        <section class="contact" id="contact">
+            <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img visible"></a>
+            <div class="geo-img invisible"></div>
             <div class="form container form-col">
                 <h2 class="title darkblue">Get started</h2>
                 <p class="par-desc">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
                 <form action="https://formspree.io/f/xyyaqjqn" method="post">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required>
-                    <label for="email">Your email</label>
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                    <label for="msg">Your message</label>
-                    <textarea name="text" id="msg" cols="30" rows="10" placeholder="Enter your message here" maxlength="500" required></textarea>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required>
+                        </div>
+                        <div class="col">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="col2">
+                            <label for="msg">Your message</label>
+                            <textarea name="text" id="msg" cols="50" rows="10" placeholder="Enter your message here" maxlength="500" required></textarea>
+                        </div>
+                    </div>
                     <button type="submit" class="btn" name="submit">Start collaboration</button>
                 </form>
             </div>
+            <div class="geo2-img invisible"></div>
         </section>
 
         <footer class="footer workDesc">
-            <div class="foot-row">
-                <button><h4 class="footer-text">Get my Resume</h4></button>
-                <button><img src="img/ic_link_teal.svg" alt="link-teal-icon"></button>
+            <div class="footer-cont">
+                <div class="foot-row">
+                    <button><h4 class="footer-text">Get my CV</h4></button>
+                    <button><img src="img/ic-link_teal.svg" alt="link-teal-icon"></button>
+                </div>
+                <ul class="social-list row container">
+                    <li class="social-item"><a href="https://stackoverflow.com/users/21014162/binyam-olango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_stackoverflow.svg" alt="stackoverflow logo" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://github.com/binyamolango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_github.svg" alt="github logo" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://twitter.com/BinyamOlango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_twitter.svg" alt="twitter logo" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/binyam-y-olango-44869b268/" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_linkedin.svg" alt="linkedin logo" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://medium.com/@olangobinyam" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_medium.svg" alt="medium logo" class="social-img"></a></li>
+                    <li class="social-item"><a href="https://venture.angellist.com/v/begin" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_angellist.svg" alt="angellist logo" class="social-img"></a></li>
+                </ul>
             </div>
-            <ul class="social-list row container">
-                <li class="social-item"><a href="https://stackoverflow.com/users/21014162/binyam-olango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_stackoverflow.svg" alt="stackoverflow logo" class="social-img"></a></li>
-                <li class="social-item"><a href="https://github.com/binyamolango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_github.svg" alt="github logo" class="social-img"></a></li>
-                <li class="social-item"><a href="https://twitter.com/BinyamOlango" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_twitter.svg" alt="twitter logo" class="social-img"></a></li>
-                <li class="social-item"><a href="https://www.linkedin.com/in/binyam-y-olango-44869b268/" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_linkedin.svg" alt="linkedin logo" class="social-img"></a></li>
-                <li class="social-item"><a href="https://medium.com/@olangobinyam" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_medium.svg" alt="medium logo" class="social-img"></a></li>
-                <li class="social-item"><a href="https://venture.angellist.com/v/begin" class="social-link" target="_blank" rel="noopener"><img src="Socials/ic_angellist.svg" alt="angellist logo" class="social-img"></a></li>
-            </ul>
         </footer>
-        
     </main>
 </body>
 </html>
