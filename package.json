@@ -1,14 +1,22 @@
 {
-  "name": "personal-portfolio",
+  "name": "Personal-Portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [📖 About the Project](#about-project)\r   - [🛠 Built With](#built-with)\r     - [Tech Stack](#tech-stack)\r     - [Key Features](#key-features)\r - [💻 Getting Started](#getting-started)\r   - [Setup](#setup)\r   - [Prerequisites](#prerequisites)\r   - [Install](#install)\r   - [Usage](#usage)\r   - [Run tests](#run-tests)\r - [👥 Authors](#authors)\r - [🔭 Future Features](#future-features)\r - [🤝 Contributing](#contributing)\r - [⭐️ Show your support](#support)\r - [🙏 Acknowledgements](#acknowledgements)\r - [📝 License](#license)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binyamolango/Personal-Portfolio.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binyamolango/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/binyamolango/Personal-Portfolio#readme",
   "devDependencies": {
     "hint": "^7.1.8",
     "stylelint": "^13.13.1",
