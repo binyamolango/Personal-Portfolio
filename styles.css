@@ -280,7 +280,7 @@ main {
   border-radius: 4px;
   margin-bottom: 9px;
   width: 100%;
-  max-width: 650px;
+  max-width: 850px;
 }
 
 .form input {
@@ -302,7 +302,7 @@ main {
 
 .footer {
   margin-top: 31px;
-  padding: 28px 0 36px 0;
+  padding: 28px 0;
 }
 
 .footer ul {
