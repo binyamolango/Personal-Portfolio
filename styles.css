@@ -312,7 +312,6 @@ main {
 .footer-text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-
 }
 
 .foot-row {
@@ -322,7 +321,6 @@ main {
   align-items: center;
   margin-bottom: 25px;
 }
-
 
 .foot-row button {
   background: none;
@@ -348,7 +346,7 @@ main {
 
   .invisible .nav {
     padding: 38px 0;
-    box-shadow: 0px 0.5px 0px #dddfe6;
+    box-shadow: 0 0.5px 0 #dddfe6;
     width: 100%;
   }
 
@@ -400,7 +398,7 @@ main {
   }
 
   .headline .sub-cont {
-    padding:0 5em 0 9.375em;
+    padding: 0 5em 0 9.375em;
   }
 
   .sub-cont .title {
@@ -422,8 +420,28 @@ main {
     margin: 50px 0;
   }
 
+  form .btn {
+    width: 50%;
+    margin-left: 140px;
+    margin-top: 40px;
+    padding: 20px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
   .sub-cont .btn {
     width: 50%;
+  }
+
+  .about .btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
   }
 
   .sub-cont .btn:active {
@@ -550,7 +568,7 @@ main {
   }
 
   .work6-desc h3 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -591,10 +609,6 @@ main {
     width: 100%;
   }
 
-  .work1 .workBtn {
-    margin: 60px 0;
-  }
-
   .workBtn {
     background: #fff;
     color: #1a2236;
@@ -606,12 +620,18 @@ main {
     padding: 12px 20px;
   }
 
+  .work1 .workBtn {
+    margin: 60px 0;
+  }
+
   .workBtn:hover {
     background: #1a2236;
     color: #fff;
+
     .visible {
       display: block;
     }
+
     .invisible {
       display: none;
     }
@@ -653,13 +673,6 @@ main {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-  }
-
-  .about .btn {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
   }
 
   .skill-pack {
@@ -724,12 +737,12 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 110px;
-    line-height: 100%;    
+    line-height: 100%;
     text-align: center;
   }
 
   .contact .par-desc {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -761,19 +774,6 @@ main {
 
   .col2 {
     width: 98%;
-  }
-
-  form .btn {
-    width: 50%;
-    margin-left: 140px;
-    margin-top: 40px;
-    padding: 20px 15px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
   }
 
   .footer {
