@@ -312,6 +312,11 @@ main {
 .footer-text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  text-align: center;
 }
 
 .foot-row {
@@ -332,12 +337,21 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+
   .visible {
     display: none;
   }
 
   .nav {
     margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background: #fff;
   }
 
   .invisible {
@@ -422,7 +436,7 @@ main {
 
   form .btn {
     width: 50%;
-    margin-left: 140px;
+    margin-left: 150px;
     margin-top: 40px;
     padding: 20px 15px;
     font-family: 'Poppins', sans-serif;
@@ -433,15 +447,15 @@ main {
     text-align: center;
   }
 
-  .sub-cont .btn {
-    width: 50%;
-  }
-
   .about .btn {
     width: 50%;
     display: flex;
     justify-content: center;
     gap: 24px;
+  }
+
+  .sub-cont .btn {
+    width: 50%;
   }
 
   .sub-cont .btn:active {
@@ -722,6 +736,7 @@ main {
     background-repeat: no-repeat;
     margin-top: 148px;
     min-width: 1496px;
+    max-width: 2440px;
   }
 
   .contact .container {
@@ -780,6 +795,7 @@ main {
     margin-top: -1px;
     height: 125px;
     min-width: 1490px;
+    max-width: 2440px;
   }
 
   .footer-cont {
