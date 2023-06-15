@@ -34,14 +34,26 @@ main {
   width: 90%;
   margin: 0 auto;
   max-width: 800px;
-
-  /* border: 2px solid blue; */
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.logo-link {
+  transition: transform .2s;
+}
+
+.logo-link:hover {
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-logo {
