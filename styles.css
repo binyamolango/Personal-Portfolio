@@ -7,10 +7,12 @@
 }
 
 img {
+  transition: transform 0.2s ease-in-out;
   max-width: 100%;
 }
 
 button {
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: none;
   background-color: white;
@@ -32,14 +34,26 @@ main {
   width: 90%;
   margin: 0 auto;
   max-width: 800px;
-
-  /* border: 2px solid blue; */
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.logo-link {
+  transition: transform .2s;
+}
+
+.logo-link:hover {
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-logo {
@@ -334,6 +348,18 @@ main {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
+}
+
+img:hover {
+  transform: scale(1.025);
+}
+
+label {
+  transition: transform 0.2s ease-in-out;
+}
+
+label:hover {
+  transform: translate(0.5em);
 }
 
 @media screen and (min-width: 768px) {
