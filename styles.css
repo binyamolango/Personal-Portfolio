@@ -11,6 +11,7 @@ img {
 }
 
 button {
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: none;
   background-color: white;
