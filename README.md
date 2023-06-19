@@ -68,7 +68,7 @@ Personal-Portfolio is a project that display my personal both technical and prof
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://binyamolango.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
