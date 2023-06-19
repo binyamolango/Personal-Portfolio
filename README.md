@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -65,13 +66,11 @@ Personal-Portfolio is a project that display my personal both technical and prof
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- > Add a link to your deployed project. -->
+- [Live Demo Link](https://google.com)
 
-<!-- - [Live Demo Link](https://google.com) -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -129,7 +128,7 @@ Example command:
 
 ### Usage
 
-To run the project: Go to your local repo where you cloned the project and open the html and css file using visual studio code and click Go Live button on the right bottom of the code editor window 
+To run the project: Click the live demo link
 
 <!--
 Example command:
@@ -141,7 +140,11 @@ Example command:
 
 ### Run tests
 
-To run tests, run the index.html file on your web browser
+To run tests: 
+
+`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+
+`npx stylelint "**/*.{css,scss}"`
 
 <!--
 Example command:
@@ -171,7 +174,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/binyamolango)
 - Twitter: [@twitterhandle](https://twitter.com/BinyamOlango)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-y-olango-44869b268/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-yohannes-44869b268/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +193,11 @@ Example:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+**Ajrass Tajemouti** has contributed to my project.
+
+- GitHub: [@githubhandle](https://github.com/tajemouti)
+
+Other contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 

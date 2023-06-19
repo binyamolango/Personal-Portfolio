@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+img:hover {
+  transform: scale(1.0125);
+}
+
 button {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -348,10 +352,6 @@ main {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
-}
-
-img:hover {
-  transform: scale(1.025);
 }
 
 label {
