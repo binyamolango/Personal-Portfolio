@@ -65,12 +65,12 @@ main {
 }
 
 .nav {
-  margin: 1.1875em 1em 0 0;
+  margin: 16.5px 14px 0 0;
 }
 
 .line {
   border-bottom: 2px solid #1a2236;
-  border-left: 1.4286em solid #1a2236;
+  border-left: 20px solid #1a2236;
 }
 
 .space-between {
@@ -88,7 +88,7 @@ main {
 .par-desc {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 0.875;
+  font-size: 0.875rem;
   line-height: 21px;
   letter-spacing: -0.01em;
   margin: 17px 0 22px 0;
@@ -506,7 +506,7 @@ label:hover {
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 6.875;
+    font-size: 6.875rem;
     line-height: 100%;
     margin: 0;
     padding: 0;
