@@ -30,8 +30,38 @@ main {
   min-width: 332px;
 }
 
-.invisible {
+.invisible,
+.hidden {
   display: none;
+}
+
+#menu-invisible {
+  height: 100vh;
+  min-height: 568px;
+  background-image: url(Background-img/image_geometry_menu_2.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+#menu-invisible .nav {
+  padding-top: 144px;
+}
+
+#menu-invisible .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-invisible .nav-item {
+  line-height: 48px;
+  text-align: Center;
+}
+
+#menu-invisible .nav-link {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .container {
@@ -367,7 +397,8 @@ label:hover {
     padding-top: 100px;
   }
 
-  .visible {
+  .visible,
+  .hidden {
     display: none;
   }
 
