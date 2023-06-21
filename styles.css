@@ -47,7 +47,7 @@ main {
 }
 
 .logo-link {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logo-link:hover {
@@ -65,7 +65,7 @@ main {
 }
 
 .nav {
-  margin: 19px 14px 0 0;
+  margin: 16.5px 14px 0 0;
 }
 
 .line {
@@ -78,17 +78,17 @@ main {
 }
 
 .title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 100%;
   margin: 30px 0 0 0;
 }
 
 .par-desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   letter-spacing: -0.01em;
   margin: 17px 0 22px 0;
@@ -100,10 +100,10 @@ main {
 }
 
 .btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   text-align: center;
   color: #fff;
@@ -163,10 +163,10 @@ main {
 
 .workDesc h3,
 .workDesc p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 80%;
   color: #fff;
   padding: 20px 0 16px 0;
@@ -180,10 +180,10 @@ main {
 }
 
 .workDesc-item {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 0.6458375rem;
   line-height: 80%;
   color: #1a2236;
   background: #98dede;
@@ -191,10 +191,10 @@ main {
 }
 
 .workBtn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   text-align: center;
   border: 1px solid #fff;
@@ -250,7 +250,7 @@ main {
 
 .skill-pack h3,
 .skill-pack li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -261,14 +261,14 @@ main {
 
 .skill-pack h3 {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   padding: 25px 0 0 0;
 }
 
 .skill-pack li {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 27px;
   letter-spacing: -0.0525em;
 }
@@ -277,22 +277,26 @@ main {
   padding-top: 21px;
 }
 
+label {
+  transition: transform 0.2s ease-in-out;
+}
+
 .form label {
   display: block;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 15px;
   color: #7d7c84;
 }
 
 .form input,
 .form textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
@@ -328,10 +332,10 @@ main {
 }
 
 .footer-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   color: #92dcdc;
   text-align: center;
@@ -352,10 +356,6 @@ main {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
-}
-
-label {
-  transition: transform 0.2s ease-in-out;
 }
 
 label:hover {
@@ -400,10 +400,10 @@ label:hover {
 
   .nav-link {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     text-align: right;
     color: #1a2236;
@@ -443,18 +443,18 @@ label:hover {
 
   .sub-cont .title {
     margin-top: 0;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 110px;
+    font-size: 6.875rem;
     line-height: 100%;
   }
 
   .sub-cont .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 21px;
     letter-spacing: -0.01em;
     margin: 50px 0;
@@ -465,10 +465,10 @@ label:hover {
     margin-left: 150px;
     margin-top: 40px;
     padding: 20px 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
     text-align: center;
   }
@@ -503,10 +503,10 @@ label:hover {
 
   .work0 h2 {
     transform: rotate(270deg);
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 110px;
+    font-size: 6.875rem;
     line-height: 100%;
     margin: 0;
     padding: 0;
@@ -608,26 +608,26 @@ label:hover {
   }
 
   .work6-desc h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 80%;
   }
 
   .work6 li button {
     background: #98dede;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 80%;
     color: #1a2236;
   }
 
   .work1 h3 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 80%;
     margin: 60px 0 34px 0;
     padding: 0;
@@ -635,10 +635,10 @@ label:hover {
 
   .work1 li,
   .work6 li {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 80%;
     padding: 12px 20px;
     margin: 0;
@@ -652,9 +652,9 @@ label:hover {
   .workBtn {
     background: #fff;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
     text-align: center;
     padding: 12px 20px;
@@ -700,18 +700,18 @@ label:hover {
   }
 
   .about .title {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 110px;
+    font-size: 6.875rem;
     line-height: 100%;
   }
 
   .about .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 21px;
   }
 
@@ -775,19 +775,19 @@ label:hover {
   }
 
   .contact .title {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 110px;
+    font-size: 6.875rem;
     line-height: 100%;
     text-align: center;
   }
 
   .contact .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 21px;
     letter-spacing: -0.01em;
     padding: 20px 0;
@@ -846,10 +846,10 @@ label:hover {
   }
 
   .footer-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
     text-align: center;
     margin-right: 14px;
