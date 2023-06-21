@@ -47,7 +47,7 @@ main {
 }
 
 .logo-link {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logo-link:hover {
@@ -78,7 +78,7 @@ main {
 }
 
 .title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-size: 3.125rem;
   line-height: 100%;
@@ -86,7 +86,7 @@ main {
 }
 
 .par-desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 0.875rem;
   line-height: 21px;
@@ -100,7 +100,7 @@ main {
 }
 
 .btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -163,7 +163,7 @@ main {
 
 .workDesc h3,
 .workDesc p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.25rem;
@@ -180,7 +180,7 @@ main {
 }
 
 .workDesc-item {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 0.6458375rem;
@@ -191,7 +191,7 @@ main {
 }
 
 .workBtn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -250,7 +250,7 @@ main {
 
 .skill-pack h3,
 .skill-pack li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -277,9 +277,13 @@ main {
   padding-top: 21px;
 }
 
+label {
+  transition: transform 0.2s ease-in-out;
+}
+
 .form label {
   display: block;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.625rem;
@@ -289,7 +293,7 @@ main {
 
 .form input,
 .form textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -328,7 +332,7 @@ main {
 }
 
 .footer-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -352,10 +356,6 @@ main {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
-}
-
-label {
-  transition: transform 0.2s ease-in-out;
 }
 
 label:hover {
@@ -400,7 +400,7 @@ label:hover {
 
   .nav-link {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -443,7 +443,7 @@ label:hover {
 
   .sub-cont .title {
     margin-top: 0;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 6.875rem;
@@ -451,7 +451,7 @@ label:hover {
   }
 
   .sub-cont .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -465,7 +465,7 @@ label:hover {
     margin-left: 150px;
     margin-top: 40px;
     padding: 20px 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.125rem;
@@ -503,7 +503,7 @@ label:hover {
 
   .work0 h2 {
     transform: rotate(270deg);
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 6.875rem;
@@ -608,7 +608,7 @@ label:hover {
   }
 
   .work6-desc h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
@@ -617,7 +617,7 @@ label:hover {
 
   .work6 li button {
     background: #98dede;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.25rem;
@@ -635,7 +635,7 @@ label:hover {
 
   .work1 li,
   .work6 li {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.25rem;
@@ -652,7 +652,7 @@ label:hover {
   .workBtn {
     background: #fff;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 27px;
@@ -700,7 +700,7 @@ label:hover {
   }
 
   .about .title {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 6.875rem;
@@ -708,7 +708,7 @@ label:hover {
   }
 
   .about .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
@@ -775,7 +775,7 @@ label:hover {
   }
 
   .contact .title {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 6.875rem;
@@ -784,7 +784,7 @@ label:hover {
   }
 
   .contact .par-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
@@ -846,7 +846,7 @@ label:hover {
   }
 
   .footer-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.125rem;
