@@ -50,6 +50,10 @@ main {
   width: 100%;
 }
 
+.nav {
+  margin: 16.5px 14px 0 0;
+}
+
 #menu-invisible .nav {
   padding-top: 12px;
 }
@@ -61,7 +65,7 @@ main {
 
 #menu-invisible .nav-item {
   line-height: 48px;
-  text-align: Center;
+  text-align: center;
 }
 
 #menu-invisible .nav-link {
@@ -99,10 +103,6 @@ main {
 
 .nav-logo {
   list-style: none;
-}
-
-.nav {
-  margin: 16.5px 14px 0 0;
 }
 
 .line {
