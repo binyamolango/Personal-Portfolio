@@ -6,8 +6,12 @@ const logo = document.getElementById("logo");
 const logo2 = document.getElementById("logo2");
 const closeBtn = document.createElement("button");
 const closeImg = document.createElement("img");
+const dotDiv = document.getElementById("dot-div");
+const navLink = document.getElementById("nav-link-menu");
+
 closeBtn.classList.toggle("hidden");
 closeImg.src = "img/ic_cross.svg";
+
 closeBtn.appendChild(closeImg);
 nav.appendChild(closeBtn);
 
@@ -25,7 +29,10 @@ function closeMenu(event) {
     closeBtn.classList.toggle("hidden");
     logo.classList.toggle("hidden");
     logo2.classList.toggle("hidden");
+
+    console.log("hello")
 }
 
 menuBtn.addEventListener("click", displayMenu);
 closeBtn.addEventListener("click", closeMenu);
+navLink.addEventListener("click", closeMenu);

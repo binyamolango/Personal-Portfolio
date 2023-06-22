@@ -36,15 +36,22 @@ main {
 }
 
 #menu-invisible {
-  height: 100vh;
-  min-height: 568px;
+  height: 477px;
   background-image: url(Background-img/image_geometry_menu_2.svg);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
+#dot-div {
+  background-image: url(Background-img/Group\ 51.svg);
+  background-position: 80% 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100%;
+}
+
 #menu-invisible .nav {
-  padding-top: 144px;
+  padding-top: 12px;
 }
 
 #menu-invisible .nav-list {
@@ -399,6 +406,10 @@ label:hover {
 
   .visible,
   .hidden {
+    display: none;
+  }
+
+  #menu-invisible {
     display: none;
   }
 
