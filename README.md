@@ -28,7 +28,7 @@ Personal-Portfolio is a project that display my personal both technical and prof
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> The tech stack that is used in this project is the combination of two technologies: HTML and Css. Both technologies are front-end(client-side) technologies; That means I haven't used any back-end language.
+> The tech stack that is used in this project is the combination of three technologies: HTML, CSS and JavaScript.
 
 <details>
   <summary>Client</summary>
@@ -38,6 +38,10 @@ Personal-Portfolio is a project that display my personal both technical and prof
   <ul>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
   </ul>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
+  </ul>
+  
 </details>
 
 <!-- <details>
@@ -61,6 +65,7 @@ Personal-Portfolio is a project that display my personal both technical and prof
 - **[Display my full name, my aspiration and career goal summary]**
 - **[Display the projects I have done and contributed in the past]**
 - **[Display options to contact me]**
+- **[Display menu on the mobile version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
