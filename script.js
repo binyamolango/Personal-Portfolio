@@ -29,8 +29,6 @@ function closeMenu(event) {
     closeBtn.classList.toggle("hidden");
     logo.classList.toggle("hidden");
     logo2.classList.toggle("hidden");
-
-    console.log("hello")
 }
 
 menuBtn.addEventListener("click", displayMenu);
