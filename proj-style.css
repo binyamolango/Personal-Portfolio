@@ -34,13 +34,19 @@ button {
   min-width: 240px;
 }
 
+.header {
+  padding-top: 40px;
+}
+
 .headerBtn {
   float: right;
   border: none;
+  width: 20px;
+  height: 20px;
 }
 
-.header {
-  padding-top: 40px;
+.headerBtn img {
+  width: 100%;
 }
 
 .container .title {
@@ -192,6 +198,19 @@ button {
     width: 90%;
     margin: 0 auto;
     padding: 5% 0;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .headerBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .headerBtn img {
+    width: 100%;
   }
 
   .container .title {

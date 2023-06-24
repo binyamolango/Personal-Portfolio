@@ -37,16 +37,9 @@ navLink.addEventListener("click", closeMenu);
 
 
 const work1Btn = document.getElementById("work1-btn");
-const closePopup = document.getElementById("close-popup");
 
 function popupWindow(e) {
-    window.open("proj1-desc.html", "popUp", "width=400, height=400");
-}
-
-function closePopupFunc(e) {
-    window.close();
-    console.log("hello")
+    window.open("proj1-desc.html", "popUp", "width=1200, height=1000");
 }
 
 work1Btn.addEventListener("click", popupWindow);
-closePopup.addEventListener("click", closePopupFunc);
