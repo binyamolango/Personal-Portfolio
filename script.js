@@ -3,10 +3,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21.svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work1-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -16,10 +19,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21 (5).svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work2-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -29,10 +35,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21 (1).svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work3-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -42,10 +51,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21 (2).svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work4-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -55,10 +67,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21 (3).svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work5-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -68,10 +83,13 @@ export const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
     "image" : "proj-img/Rectangle 21 (4).svg",
     "headerImg" : "img/ic_cross.svg",
+    "workImg-alt" : "work6-image",
+    "headerImg-alt" : "close-icon",
     "technologies" : ["HTML/CSS", "Ruby on Rails", "JavaScript"],
     "buttonDesc" : "See this project",
     "arrowImg1" : "img/arrow.svg",
     "arrowImg2" : "img/Union.svg",
+    "arrow-alt" : "arrow-image",
     "linkToLive" : "",
     "linkToSource" : "",
     "previous" : "Previous project",
@@ -100,12 +118,15 @@ const arrowImg2 = document.createElement("img");
 
 work0Title.textContent = "Projects";
 work1Img.src = projects[0]["image"];
+work1Img.alt = projects[0]["workImg-alt"];
 work1Title.textContent = projects[0]["name"];
 workDescItem1.textContent = projects[0]["technologies"][0];
 workDescItem2.textContent = projects[0]["technologies"][1];
 workDescItem3.textContent = projects[0]["technologies"][2];
 arrowImg1.src = projects[0]["arrowImg1"];
+arrowImg1.alt = projects[0]["arrow-alt"];
 arrowImg2.src = projects[0]["arrowImg2"];
+arrowImg2.alt = projects[0]["arrow-alt"];
 
 if (workSection) {
     workSection.classList.add("work");
@@ -153,12 +174,15 @@ const arrowImg21 = document.createElement("img");
 const arrowImg22 = document.createElement("img");
 
 work2Img.src = projects[1]["image"];
+work2Img.alt = projects[1]["workImg-alt"];
 work2Title.textContent = projects[1]["name"];
 workDescItem21.textContent = projects[1]["technologies"][0];
 workDescItem22.textContent = projects[1]["technologies"][1];
 workDescItem23.textContent = projects[1]["technologies"][2];
 arrowImg21.src = projects[1]["arrowImg1"];
+arrowImg21.alt = projects[1]["arrow-alt"];
 arrowImg22.src = projects[1]["arrowImg2"];
+arrowImg22.alt = projects[1]["arrow-alt"];
 
 work2Fig.className = "work2 work-cont work2-fig";
 work2Img.classList.add("work-img");
@@ -197,12 +221,15 @@ const arrowImg31 = document.createElement("img");
 const arrowImg32 = document.createElement("img");
 
 work3Img.src = projects[2]["image"];
+work2Img.alt = projects[2]["workImg-alt"];
 work3Title.textContent = projects[2]["name"];
 workDescItem31.textContent = projects[2]["technologies"][0];
 workDescItem32.textContent = projects[2]["technologies"][1];
 workDescItem33.textContent = projects[2]["technologies"][2];
 arrowImg31.src = projects[2]["arrowImg1"];
+arrowImg31.alt = projects[2]["arrow-alt"];
 arrowImg32.src = projects[2]["arrowImg2"];
+arrowImg31.alt = projects[2]["arrow-alt"];
 
 work3Fig.className = "work3 work-cont work3-fig";
 work3Img.classList.add("work-img");
@@ -241,12 +268,15 @@ const arrowImg41 = document.createElement("img");
 const arrowImg42 = document.createElement("img");
 
 work4Img.src = projects[3]["image"];
+work2Img.alt = projects[3]["workImg-alt"];
 work4Title.textContent = projects[3]["name"];
 workDescItem41.textContent = projects[3]["technologies"][0];
 workDescItem42.textContent = projects[3]["technologies"][1];
 workDescItem43.textContent = projects[3]["technologies"][2];
 arrowImg41.src = projects[3]["arrowImg1"];
+arrowImg41.alt = projects[3]["arrow-alt"];
 arrowImg42.src = projects[3]["arrowImg2"];
+arrowImg41.alt = projects[3]["arrow-alt"];
 
 work4Fig.className = "work4 work-cont work4-fig";
 work4Img.classList.add("work-img");
@@ -285,12 +315,15 @@ const arrowImg51 = document.createElement("img");
 const arrowImg52 = document.createElement("img");
 
 work5Img.src = projects[4]["image"];
+work2Img.alt = projects[4]["workImg-alt"];
 work5Title.textContent = projects[4]["name"];
 workDescItem51.textContent = projects[4]["technologies"][0];
 workDescItem52.textContent = projects[4]["technologies"][1];
 workDescItem53.textContent = projects[4]["technologies"][2];
 arrowImg51.src = projects[4]["arrowImg1"];
+arrowImg51.alt = projects[4]["arrow-alt"];
 arrowImg52.src = projects[4]["arrowImg2"];
+arrowImg52.alt = projects[4]["arrow-alt"];
 
 work5Fig.className = "work5 work-cont work5-fig";
 work5Img.classList.add("work-img");
@@ -331,13 +364,16 @@ const arrowImg61 = document.createElement("img");
 const arrowImg62 = document.createElement("img");
 
 work6Img.src = projects[5]["image"];
+work2Img.alt = projects[5]["workImg-alt"];
 work6Title.textContent = projects[5]["name"];
 workDescItem61.textContent = projects[5]["technologies"][0];
 workDescItem62.textContent = projects[5]["technologies"][1];
 workDescItem63.textContent = projects[5]["technologies"][2];
 listBtn.textContent = "+1";
 arrowImg61.src = projects[5]["arrowImg1"];
+arrowImg61.alt = projects[5]["arrow-alt"];
 arrowImg62.src = projects[5]["arrowImg2"];
+arrowImg62.alt = projects[5]["arrow-alt"];
 
 work6Fig.className = "work6 work-cont work6-fig";
 work6Img.classList.add("work-img");
@@ -396,6 +432,7 @@ const navLink = document.getElementById("nav-link-menu");
 
 closeBtn.classList.toggle("hidden");
 closeImg.src = "img/ic_cross.svg";
+closeImg.alt = "close-icon";
 
 closeBtn.appendChild(closeImg);
 if(nav) {
