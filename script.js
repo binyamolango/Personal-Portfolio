@@ -148,7 +148,7 @@ const workDescItem21 = document.createElement("li");
 const workDescItem22 = document.createElement("li");
 const workDescItem23 = document.createElement("li");
 const workBtn2 = document.createElement("button");
-const workBtnDesc2 = document.createTextNode(projects[0]["buttonDesc"]);
+const workBtnDesc2 = document.createTextNode(projects[1]["buttonDesc"]);
 const arrowImg21 = document.createElement("img");
 const arrowImg22 = document.createElement("img");
 
@@ -192,7 +192,7 @@ const workDescItem31 = document.createElement("li");
 const workDescItem32 = document.createElement("li");
 const workDescItem33 = document.createElement("li");
 const workBtn3 = document.createElement("button");
-const workBtnDesc3 = document.createTextNode(projects[0]["buttonDesc"]);
+const workBtnDesc3 = document.createTextNode(projects[2]["buttonDesc"]);
 const arrowImg31 = document.createElement("img");
 const arrowImg32 = document.createElement("img");
 
@@ -200,7 +200,7 @@ work3Img.src = projects[2]["image"];
 work3Title.textContent = projects[2]["name"];
 workDescItem31.textContent = projects[2]["technologies"][0];
 workDescItem32.textContent = projects[2]["technologies"][1];
-workDescItem23.textContent = projects[2]["technologies"][2];
+workDescItem33.textContent = projects[2]["technologies"][2];
 arrowImg31.src = projects[2]["arrowImg1"];
 arrowImg32.src = projects[2]["arrowImg2"];
 
@@ -224,6 +224,51 @@ container3.append(work3Title, workDescList3, workBtn3)
 workDescList3.append(workDescItem31, workDescItem32, workDescItem33);
 workBtn3.append(workBtnDesc3, arrowImg31, arrowImg32);
 
+// Project 4 elements and values
+
+const work4Fig = document.createElement("figure");
+const work4Img = document.createElement("img");
+const work4Desc = document.createElement("div");
+const container4 = document.createElement("div");
+const work4Title = document.createElement("h3");
+const workDescList4 = document.createElement("ul");
+const workDescItem41 = document.createElement("li");
+const workDescItem42 = document.createElement("li");
+const workDescItem43 = document.createElement("li");
+const workBtn4 = document.createElement("button");
+const workBtnDesc4 = document.createTextNode(projects[3]["buttonDesc"]);
+const arrowImg41 = document.createElement("img");
+const arrowImg42 = document.createElement("img");
+
+work4Img.src = projects[3]["image"];
+work4Title.textContent = projects[3]["name"];
+workDescItem41.textContent = projects[3]["technologies"][0];
+workDescItem42.textContent = projects[3]["technologies"][1];
+workDescItem43.textContent = projects[3]["technologies"][2];
+arrowImg41.src = projects[3]["arrowImg1"];
+arrowImg42.src = projects[3]["arrowImg2"];
+
+work4Fig.className = "work4 work-cont work4-fig";
+work4Img.classList.add("work-img");
+work4Desc.className = "work4 work-cont workDesc work4-desc visible";
+container4.classList.add("container");
+workDescList4.classList.add("workDesc-list");
+workDescItem41.classList.add("workDesc-item");
+workDescItem42.classList.add("workDesc-item");
+workDescItem43.classList.add("workDesc-item");
+workBtn4.className = "workBtn btn-cont";
+workBtn4.setAttribute("id", "work4-btn");
+arrowImg41.className = "arrow-img visible";
+arrowImg42.className = "arrow-img invisible";
+
+grid.append(work4Fig, work4Desc);
+work4Fig.appendChild(work4Img);
+work4Desc.appendChild(container4);
+container4.append(work4Title, workDescList4, workBtn4)
+workDescList4.append(workDescItem41, workDescItem42, workDescItem43);
+workBtn4.append(workBtnDesc4, arrowImg41, arrowImg42);
+
+// popup window script
 
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu-invisible");
@@ -278,6 +323,10 @@ function popupWindow3(e) {
     window.open("proj3-desc.html", "popUp", "width=1200, height=1000");
 }
 
+function popupWindow4(e) {
+    window.open("proj4-desc.html", "popUp", "width=1200, height=1000");
+}
+
 if(workBtn) {
     workBtn.addEventListener("click", popupWindow1);
 }
@@ -286,3 +335,5 @@ workBtn2.addEventListener("click", popupWindow2);
 work2Img.addEventListener("click", popupWindow2);
 workBtn3.addEventListener("click", popupWindow3);
 work3Img.addEventListener("click", popupWindow3);
+workBtn4.addEventListener("click", popupWindow4);
+work4Img.addEventListener("click", popupWindow4);
