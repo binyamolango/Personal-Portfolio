@@ -268,6 +268,105 @@ container4.append(work4Title, workDescList4, workBtn4)
 workDescList4.append(workDescItem41, workDescItem42, workDescItem43);
 workBtn4.append(workBtnDesc4, arrowImg41, arrowImg42);
 
+// Project 5 elements and values
+
+const work5Fig = document.createElement("figure");
+const work5Img = document.createElement("img");
+const work5Desc = document.createElement("div");
+const container5 = document.createElement("div");
+const work5Title = document.createElement("h3");
+const workDescList5 = document.createElement("ul");
+const workDescItem51 = document.createElement("li");
+const workDescItem52 = document.createElement("li");
+const workDescItem53 = document.createElement("li");
+const workBtn5 = document.createElement("button");
+const workBtnDesc5 = document.createTextNode(projects[4]["buttonDesc"]);
+const arrowImg51 = document.createElement("img");
+const arrowImg52 = document.createElement("img");
+
+work5Img.src = projects[4]["image"];
+work5Title.textContent = projects[4]["name"];
+workDescItem51.textContent = projects[4]["technologies"][0];
+workDescItem52.textContent = projects[4]["technologies"][1];
+workDescItem53.textContent = projects[4]["technologies"][2];
+arrowImg51.src = projects[4]["arrowImg1"];
+arrowImg52.src = projects[4]["arrowImg2"];
+
+work5Fig.className = "work5 work-cont work5-fig";
+work5Img.classList.add("work-img");
+work5Desc.className = "work5 work-cont workDesc work5-desc visible";
+container5.classList.add("container");
+workDescList5.classList.add("workDesc-list");
+workDescItem51.classList.add("workDesc-item");
+workDescItem52.classList.add("workDesc-item");
+workDescItem53.classList.add("workDesc-item");
+workBtn5.className = "workBtn btn-cont";
+workBtn5.setAttribute("id", "work5-btn");
+arrowImg51.className = "arrow-img visible";
+arrowImg52.className = "arrow-img invisible";
+
+grid.append(work5Fig, work5Desc);
+work5Fig.appendChild(work5Img);
+work5Desc.appendChild(container5);
+container5.append(work5Title, workDescList5, workBtn5)
+workDescList5.append(workDescItem51, workDescItem52, workDescItem53);
+workBtn5.append(workBtnDesc5, arrowImg51, arrowImg52);
+
+// Project 6 elements and values
+
+const work6Fig = document.createElement("figure");
+const work6Img = document.createElement("img");
+const work6Desc = document.createElement("div");
+const container6 = document.createElement("div");
+const work6Title = document.createElement("h3");
+const workDescList6 = document.createElement("ul");
+const workDescItem61 = document.createElement("li");
+const workDescItem62 = document.createElement("li");
+const workDescItem63 = document.createElement("li");
+const workDescItem64 = document.createElement("li");
+const listBtn = document.createElement("button");
+const workBtn6 = document.createElement("button");
+const workBtnDesc6 = document.createTextNode(projects[5]["buttonDesc"]);
+const arrowImg61 = document.createElement("img");
+const arrowImg62 = document.createElement("img");
+
+work6Img.src = projects[5]["image"];
+work6Title.textContent = projects[5]["name"];
+workDescItem61.textContent = projects[5]["technologies"][0];
+workDescItem62.textContent = projects[5]["technologies"][1];
+workDescItem63.textContent = projects[5]["technologies"][2];
+listBtn.textContent = "+1";
+arrowImg61.src = projects[5]["arrowImg1"];
+arrowImg62.src = projects[5]["arrowImg2"];
+
+work6Fig.className = "work6 work-cont work6-fig";
+work6Img.classList.add("work-img");
+work6Desc.className = "work6 work-cont workDesc work6-desc";
+container6.classList.add("container");
+workDescList6.classList.add("workDesc-list");
+workDescItem61.classList.add("workDesc-item");
+workDescItem62.classList.add("workDesc-item");
+workDescItem63.className = "workDesc-item visible";
+workDescItem64.className = "workDesc-item invisible";
+workBtn6.className = "workBtn btn-cont";
+workBtn6.setAttribute("id", "work6-btn");
+arrowImg61.className = "arrow-img visible";
+arrowImg62.className = "arrow-img invisible";
+
+grid.append(work6Fig, work6Desc);
+work6Fig.appendChild(work6Img);
+work6Desc.appendChild(container6);
+container6.append(work6Title, workDescList6, workBtn6)
+workDescList6.append(workDescItem61, workDescItem62, workDescItem63, workDescItem64);
+workDescItem64.appendChild(listBtn);
+workBtn6.append(workBtnDesc6, arrowImg61, arrowImg62);
+
+listBtn.addEventListener("click", () => {
+    workDescItem63.classList.toggle("visible");
+    workDescItem64.classList.toggle("invisible");
+    workDescItem64.classList.toggle("hidden");
+})
+
 // popup window script
 
 const menuBtn = document.getElementById("menu-btn");
@@ -327,6 +426,14 @@ function popupWindow4(e) {
     window.open("proj4-desc.html", "popUp", "width=1200, height=1000");
 }
 
+function popupWindow5(e) {
+    window.open("proj5-desc.html", "popUp", "width=1200, height=1000");
+}
+
+function popupWindow6(e) {
+    window.open("proj6-desc.html", "popUp", "width=1200, height=1000");
+}
+
 if(workBtn) {
     workBtn.addEventListener("click", popupWindow1);
 }
@@ -337,3 +444,7 @@ workBtn3.addEventListener("click", popupWindow3);
 work3Img.addEventListener("click", popupWindow3);
 workBtn4.addEventListener("click", popupWindow4);
 work4Img.addEventListener("click", popupWindow4);
+workBtn5.addEventListener("click", popupWindow5);
+work5Img.addEventListener("click", popupWindow5);
+workBtn6.addEventListener("click", popupWindow6);
+work6Img.addEventListener("click", popupWindow6);
