@@ -1,5 +1,7 @@
 import { projects } from "./script.js";
 
+// create html elements for the popup project description
+
 const container = document.getElementById("container");
 const smallContainer = document.createElement("main");
 const headerBtn = document.createElement("button");
@@ -95,6 +97,8 @@ btnContainer.className = "btn-cont";
 btnLive.className = "btn-live";
 btnSource.className = "btn-source";
 btnDirection.className = "direction-btn invisible";
+
+// close popup script
 
 const closePopup = document.getElementById("close-popup");
 
