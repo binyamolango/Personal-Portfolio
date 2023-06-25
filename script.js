@@ -367,6 +367,22 @@ listBtn.addEventListener("click", () => {
     workDescItem64.classList.toggle("hidden");
 })
 
+// add background images
+
+const geo1 = document.createElement("div");
+const geo2 = document.createElement("div");
+const geo3 = document.createElement("div");
+const geo4 = document.createElement("div");
+const geo5 = document.createElement("div");
+
+geo1.className = "geo1 invisible";
+geo2.className = "geo2 invisible";
+geo3.className = "geo3 invisible";
+geo4.className = "geo4 invisible";
+geo5.className = "geo5 invisible";
+
+grid.append(geo1, geo2, geo3, geo4, geo5);
+
 // popup window script
 
 const menuBtn = document.getElementById("menu-btn");
