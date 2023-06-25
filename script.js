@@ -180,6 +180,49 @@ container2.append(work2Title, workDescList2, workBtn2)
 workDescList2.append(workDescItem21, workDescItem22, workDescItem23);
 workBtn2.append(workBtnDesc2, arrowImg21, arrowImg22);
 
+// Project 3 elements and values
+
+const work3Fig = document.createElement("figure");
+const work3Img = document.createElement("img");
+const work3Desc = document.createElement("div");
+const container3 = document.createElement("div");
+const work3Title = document.createElement("h3");
+const workDescList3 = document.createElement("ul");
+const workDescItem31 = document.createElement("li");
+const workDescItem32 = document.createElement("li");
+const workDescItem33 = document.createElement("li");
+const workBtn3 = document.createElement("button");
+const workBtnDesc3 = document.createTextNode(projects[0]["buttonDesc"]);
+const arrowImg31 = document.createElement("img");
+const arrowImg32 = document.createElement("img");
+
+work3Img.src = projects[2]["image"];
+work3Title.textContent = projects[2]["name"];
+workDescItem31.textContent = projects[2]["technologies"][0];
+workDescItem32.textContent = projects[2]["technologies"][1];
+workDescItem23.textContent = projects[2]["technologies"][2];
+arrowImg31.src = projects[2]["arrowImg1"];
+arrowImg32.src = projects[2]["arrowImg2"];
+
+work3Fig.className = "work3 work-cont work3-fig";
+work3Img.classList.add("work-img");
+work3Desc.className = "work3 work-cont workDesc work3-desc visible";
+container3.classList.add("container");
+workDescList3.classList.add("workDesc-list");
+workDescItem31.classList.add("workDesc-item");
+workDescItem32.classList.add("workDesc-item");
+workDescItem33.classList.add("workDesc-item");
+workBtn3.className = "workBtn btn-cont";
+workBtn3.setAttribute("id", "work3-btn");
+arrowImg31.className = "arrow-img visible";
+arrowImg32.className = "arrow-img invisible";
+
+grid.append(work3Fig, work3Desc);
+work3Fig.appendChild(work3Img);
+work3Desc.appendChild(container3);
+container3.append(work3Title, workDescList3, workBtn3)
+workDescList3.append(workDescItem31, workDescItem32, workDescItem33);
+workBtn3.append(workBtnDesc3, arrowImg31, arrowImg32);
 
 
 const menuBtn = document.getElementById("menu-btn");
@@ -231,9 +274,15 @@ function popupWindow2(e) {
     window.open("proj2-desc.html", "popUp", "width=1200, height=1000");
 }
 
+function popupWindow3(e) {
+    window.open("proj3-desc.html", "popUp", "width=1200, height=1000");
+}
+
 if(workBtn) {
     workBtn.addEventListener("click", popupWindow1);
 }
 work1Img.addEventListener("click", popupWindow1);
 workBtn2.addEventListener("click", popupWindow2);
 work2Img.addEventListener("click", popupWindow2);
+workBtn3.addEventListener("click", popupWindow3);
+work3Img.addEventListener("click", popupWindow3);
