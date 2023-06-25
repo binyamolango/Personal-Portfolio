@@ -16,7 +16,7 @@ img:hover {
 }
 
 button {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
   cursor: pointer;
   border: none;
   background-color: white;
