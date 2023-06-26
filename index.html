@@ -114,7 +114,7 @@
             <div class="form container form-col">
                 <h2 class="title darkblue">Get started</h2>
                 <p class="par-desc">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-                <form action="https://formspree.io/f/xyyaqjqn" method="post">
+                <form action="https://formspree.io/f/xyyaqjqn" method="post" id="form">
                     <div class="form-row">
                         <div class="col">
                             <label for="name">Your name</label>
@@ -129,6 +129,7 @@
                             <textarea name="text" id="msg" cols="50" rows="10" placeholder="Enter your message here" maxlength="500" required></textarea>
                         </div>
                     </div>
+                    <p class="success_message" id="error_message"></p>
                     <button type="submit" class="btn" name="submit">Start collaboration</button>
                 </form>
             </div>
@@ -154,5 +155,6 @@
     </main>
 
     <script type="module" src="script.js"></script>
+    <script type="text/JavaScript" src="script-validation.js"></script>
 </body>
 </html>
