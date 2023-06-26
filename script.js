@@ -30,3 +30,7 @@ function closeMenu(event) {
     logo.classList.toggle("hidden");
     logo2.classList.toggle("hidden");
 }
+
+menuBtn.addEventListener("click", displayMenu);
+closeBtn.addEventListener("click", closeMenu);
+navLink.addEventListener("click", closeMenu);
