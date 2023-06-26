@@ -463,12 +463,8 @@ if(navLink) {
     navLink.addEventListener("click", closeMenu);
 }
 
-const desktop = document.getElementById("desktop");
-const style = window.getComputedStyle(desktop);
-
-
 function popupWindow1(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj1-desc.html", "popUp", "width=400, height=400");
     }
     else {
@@ -477,7 +473,7 @@ function popupWindow1(e) {
 }
 
 function popupWindow2(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj2-desc.html", "popUp", "width=400, height=400");
     }
     else {
@@ -486,7 +482,7 @@ function popupWindow2(e) {
 }
 
 function popupWindow3(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj3-desc.html", "popUp", "width=400, height=400");
     }
     else {
@@ -495,7 +491,7 @@ function popupWindow3(e) {
 }
 
 function popupWindow4(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj4-desc.html", "popUp", "width=400, height=400");
     }
     else {
@@ -504,7 +500,7 @@ function popupWindow4(e) {
 }
 
 function popupWindow5(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj5-desc.html", "popUp", "width=400, height=400");
     }
     else {
@@ -513,7 +509,7 @@ function popupWindow5(e) {
 }
 
 function popupWindow6(e) {
-    if(style.display === "none") {
+    if(window.screen.width <= 768) {
         window.open("proj6-desc.html", "popUp", "width=400, height=400");
     }
     else {
