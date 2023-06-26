@@ -14,14 +14,26 @@
 <body>
     <main>
         <header class="header">
-            <div class="row visible">
-                <a href="#" class="logo-link"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
-                <nav class="nav">        
-                    <button>
+            <div class="row visible" id="nav-row">
+                <a href="#" class="logo-link" id="logo"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
+                <a href="#" class="hidden logo-link" id="logo2"><img src="img/Group 98.svg" alt="logo2" class="logo-img" ></a>
+                <nav class="nav" id="nav">        
+                    <button id="menu-btn">
                         <div class="line"></div>
                         <div class="line space-between"></div>
                         <div class="line"></div>
                     </button>
+                </nav>
+            </div>
+            <div class="hidden" id="menu-invisible">
+                <div id="dot-div"></div>
+                <nav class="nav">
+                    <ul class="nav-list" id="nav-link-menu">
+                        <li class="nav-item"><a href="#hello" class="nav-link">Hello</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li> 
+                    </ul>
                 </nav>
             </div>
 
@@ -275,5 +287,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
