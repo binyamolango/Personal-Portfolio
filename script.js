@@ -463,28 +463,62 @@ if(navLink) {
     navLink.addEventListener("click", closeMenu);
 }
 
+const desktop = document.getElementById("desktop");
+const style = window.getComputedStyle(desktop);
+
+
 function popupWindow1(e) {
-    window.open("proj1-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj1-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj1-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 function popupWindow2(e) {
-    window.open("proj2-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj2-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj2-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 function popupWindow3(e) {
-    window.open("proj3-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj3-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj3-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 function popupWindow4(e) {
-    window.open("proj4-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj4-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj4-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 function popupWindow5(e) {
-    window.open("proj5-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj5-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj5-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 function popupWindow6(e) {
-    window.open("proj6-desc.html", "popUp", "width=1200, height=1000");
+    if(style.display === "none") {
+        window.open("proj6-desc.html", "popUp", "width=400, height=400");
+    }
+    else {
+        window.open("proj6-desc.html", "popUp", "width=1200, height=1000");
+    }
 }
 
 if(workBtn) {
