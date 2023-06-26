@@ -22,3 +22,11 @@ function displayMenu(e) {
     logo.classList.toggle("hidden");
     logo2.classList.toggle("hidden");
 }
+
+function closeMenu(event) {
+    menu.classList.toggle("hidden");
+    menuBtn.classList.toggle("hidden");
+    closeBtn.classList.toggle("hidden");
+    logo.classList.toggle("hidden");
+    logo2.classList.toggle("hidden");
+}
