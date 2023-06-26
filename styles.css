@@ -354,6 +354,10 @@ label {
   padding: 14px 16px;
 }
 
+#email {
+  transform: lowercase;
+}
+
 .form-col {
   display: flex;
   flex-direction: column;
