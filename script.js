@@ -522,4 +522,8 @@ if (workBtn) {
 work1Img.addEventListener('click', popupWindow1);
 workBtn2.addEventListener('click', popupWindow2);
 work2Img.addEventListener('click', popupWindow2);
+workBtn3.addEventListener('click', popupWindow3);
+work3Img.addEventListener('click', popupWindow3);
+workBtn4.addEventListener('click', popupWindow4);
+work4Img.addEventListener('click', popupWindow4);
 // contact validation script
