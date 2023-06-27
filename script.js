@@ -475,6 +475,14 @@ function popupWindow1() {
 
 // add function
 
+function popupWindow2() {
+  if (window.screen.width <= 768) {
+    window.open('proj2-desc.html', 'popUp', 'width=400, height=400');
+  } else {
+    window.open('proj2-desc.html', 'popUp', 'width=1200, height=1000');
+  }
+}
+
 if (workBtn) {
   workBtn.addEventListener('click', popupWindow1);
 }
