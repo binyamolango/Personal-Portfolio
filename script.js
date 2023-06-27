@@ -483,6 +483,14 @@ function popupWindow2() {
   }
 }
 
+function popupWindow3() {
+  if (window.screen.width <= 768) {
+    window.open('proj3-desc.html', 'popUp', 'width=400, height=400');
+  } else {
+    window.open('proj3-desc.html', 'popUp', 'width=1200, height=1000');
+  }
+}
+
 if (workBtn) {
   workBtn.addEventListener('click', popupWindow1);
 }
