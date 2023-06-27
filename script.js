@@ -491,6 +491,30 @@ function popupWindow3() {
   }
 }
 
+function popupWindow4() {
+  if (window.screen.width <= 768) {
+    window.open('proj4-desc.html', 'popUp', 'width=400, height=400');
+  } else {
+    window.open('proj4-desc.html', 'popUp', 'width=1200, height=1000');
+  }
+}
+
+function popupWindow5() {
+  if (window.screen.width <= 768) {
+    window.open('proj5-desc.html', 'popUp', 'width=400, height=400');
+  } else {
+    window.open('proj5-desc.html', 'popUp', 'width=1200, height=1000');
+  }
+}
+
+function popupWindow6() {
+  if (window.screen.width <= 768) {
+    window.open('proj6-desc.html', 'popUp', 'width=400, height=400');
+  } else {
+    window.open('proj6-desc.html', 'popUp', 'width=1200, height=1000');
+  }
+}
+
 if (workBtn) {
   workBtn.addEventListener('click', popupWindow1);
 }
