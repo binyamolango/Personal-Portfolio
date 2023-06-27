@@ -519,4 +519,7 @@ if (workBtn) {
   workBtn.addEventListener('click', popupWindow1);
 }
 
+work1Img.addEventListener('click', popupWindow1);
+workBtn2.addEventListener('click', popupWindow2);
+work2Img.addEventListener('click', popupWindow2);
 // contact validation script
