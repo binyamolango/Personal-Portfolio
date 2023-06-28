@@ -24,6 +24,8 @@
 
 Personal-Portfolio is a project that display my personal both technical and professional skills and the projects I have done and contributed in the past.
 
+> [Here is the link to loom walkthrough about the project](https://www.loom.com/share/f51f36080545413da3435a2aaaa3dcf1?sid=59eac9ec-7801-4605-b460-bef5c0486a2c)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
