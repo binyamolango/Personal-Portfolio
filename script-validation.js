@@ -1,4 +1,3 @@
-// contact validation script
 document.getElementById('form').addEventListener('submit', (e) => {
     const emailVal = document.getElementById('email').value;
     const emailErr = document.getElementById('error_message');
