@@ -900,6 +900,7 @@ label:hover {
 
   #popup-window {
     background: rgba(26, 34, 54, 0.95);
+    margin: 0 auto;
   }
 
   .big-container {
@@ -913,7 +914,7 @@ label:hover {
     margin: 0 auto;
     background: #fff;
     box-shadow: 0 10px 20px #00000040;
-    height: 1780px;
+    height: 1750px;
     max-width: 1440px;
   }
 
