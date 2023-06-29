@@ -546,8 +546,8 @@ function popup(n) {
   img5.className = 'work-img';
   detailDesc.className = 'detail-desc';
   btnContainer.className = 'btn-cont';
-  btnLive.className = 'btn-live';
-  btnSource.className = 'btn-source';
+  btnLive.className = 'btn-desc';
+  btnSource.className = 'btn-desc';
   btnDirection.className = 'direction-btn invisible';
 
   headerImg.src = projects[n].headerImg;

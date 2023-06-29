@@ -399,7 +399,7 @@ main {
   max-width: 350px;
 }
 
-.big-container .btn-cont button {
+.big-container .btn-cont .btn-desc {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -413,15 +413,16 @@ main {
   background-position: 90% 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  width: 100%;
 }
 
-.big-container .btn-cont button:hover {
+.big-container .btn-cont .btn-desc:hover {
   background: #1a2236;
   color: #fff;
   border: 1px solid #fff;
 }
 
-.big-container .btn-cont button:active {
+.big-container .btn-cont .btn-desc:active {
   border: 2px solid #fff;
 }
 
