@@ -551,6 +551,12 @@ label {
   transform: lowercase;
 }
 
+#error_message {
+  color: rgb(255, 55, 0);
+  font-size: larger;
+  margin-top: 0.5rem;
+}
+
 .form-col {
   display: flex;
   flex-direction: column;
