@@ -473,7 +473,7 @@ const popupWin = document.getElementById('popup-window');
 const body = document.getElementById('body');
 
 function popup(n) {
-  popupWin.classList.toggle("hidden");
+  popupWin.classList.toggle('hidden');
   body.classList.toggle('blur');
 
   const container = document.getElementById('container');
@@ -574,13 +574,13 @@ function popup(n) {
 
   // close popup script
 
-  headerBtn.addEventListener('click', closePopupFunc);
-
   function closePopupFunc() {
-    popupWin.classList.toggle("hidden");
-    smallContainer.classList.toggle("hidden");
+    popupWin.classList.toggle('hidden');
+    smallContainer.classList.toggle('hidden');
     body.classList.toggle('blur');
   }
+
+  headerBtn.addEventListener('click', closePopupFunc);
 }
 
 function popupWindow1() {

@@ -426,6 +426,15 @@ main {
   border: 2px solid #fff;
 }
 
+.foot-row button {
+  background: none;
+  border: none;
+}
+
+.foot-row button:active {
+  border: 2px solid #1a2236;
+}
+
 .big-container .btn-cont button:first-of-type {
   background-image: url(img/Union2.svg);
 }
@@ -572,15 +581,6 @@ label {
   gap: 14px;
   align-items: center;
   margin-bottom: 25px;
-}
-
-.foot-row button {
-  background: none;
-  border: none;
-}
-
-.foot-row button:active {
-  border: 2px solid #1a2236;
 }
 
 label:hover {
@@ -894,6 +894,14 @@ label:hover {
     margin: 60px 0;
   }
 
+  .big-container .invisible {
+    display: block;
+  }
+
+  .big-container .visible {
+    display: none;
+  }
+
   .workBtn:hover {
     background: #1a2236;
     color: #fff;
@@ -912,14 +920,6 @@ label:hover {
   }
 
   /* project description popup style */
-
-  .big-container .invisible {
-    display: block;
-  }
-
-  .big-container .visible {
-    display: none;
-  }
 
   .big-container {
     background: rgba(26, 34, 54, 0.95);
@@ -955,6 +955,23 @@ label:hover {
 
   .big-container .headerBtn img {
     width: 100%;
+  }
+
+  .about .title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.875rem;
+    line-height: 100%;
+  }
+
+  .contact .title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.875rem;
+    line-height: 100%;
+    text-align: center;
   }
 
   .big-container .container .title {
@@ -1061,14 +1078,6 @@ label:hover {
     margin-left: 96px;
   }
 
-  .about .title {
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 6.875rem;
-    line-height: 100%;
-  }
-
   .about .par-desc {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1134,15 +1143,6 @@ label:hover {
     max-width: 670px;
     padding-top: 128px;
     margin-bottom: -175px;
-  }
-
-  .contact .title {
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 6.875rem;
-    line-height: 100%;
-    text-align: center;
   }
 
   .contact .par-desc {
