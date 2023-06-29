@@ -349,6 +349,10 @@ main {
   width: 100%;
 }
 
+.big-container .work-image-all:hover {
+  transform: none;
+}
+
 .big-container .detail-desc p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
