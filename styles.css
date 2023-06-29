@@ -382,7 +382,7 @@ main {
   color: #1a2236;
   background: #fff;
   border: 1px solid #1a2236;
-  padding: 0.75em 0;
+  padding: 12px 0;
   cursor: pointer;
   width: 100%;
 }
@@ -913,7 +913,7 @@ label:hover {
     margin: 0 auto;
     background: #fff;
     box-shadow: 0 10px 20px #00000040;
-    height: 1720px;
+    height: 1780px;
     max-width: 1440px;
   }
 
