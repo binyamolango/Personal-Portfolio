@@ -1,3 +1,49 @@
+// mobile menu script
+
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu-invisible');
+const nav = document.getElementById('nav');
+const logo = document.getElementById('logo');
+const logo2 = document.getElementById('logo2');
+const closeBtn = document.createElement('button');
+const closeImg = document.createElement('img');
+const navLink = document.getElementById('nav-link-menu');
+
+closeBtn.classList.toggle('hidden');
+closeImg.src = 'img/ic_cross.svg';
+closeImg.alt = 'close-icon';
+
+closeBtn.appendChild(closeImg);
+if (nav) {
+  nav.appendChild(closeBtn);
+}
+
+function displayMenu() {
+  menu.classList.toggle('hidden');
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('hidden');
+  logo.classList.toggle('hidden');
+  logo2.classList.toggle('hidden');
+}
+
+function closeMenu() {
+  menu.classList.toggle('hidden');
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('hidden');
+  logo.classList.toggle('hidden');
+  logo2.classList.toggle('hidden');
+}
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', displayMenu);
+}
+closeBtn.addEventListener('click', closeMenu);
+if (navLink) {
+  navLink.addEventListener('click', closeMenu);
+}
+
+// popup window script
+
 const projects = [{
   name: 'Project 1',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
@@ -365,18 +411,6 @@ const workBtnDesc6 = document.createTextNode(projects[5].buttonDesc);
 const arrowImg61 = document.createElement('img');
 const arrowImg62 = document.createElement('img');
 
-work6Img.src = projects[5].image;
-work2Img.alt = projects[5]['workImg-alt'];
-work6Title.textContent = projects[5].name;
-[workDescItem61.textContent,
-  workDescItem62.textContent,
-  workDescItem63.textContent] = projects[5].technologies;
-listBtn.textContent = '+1';
-arrowImg61.src = projects[5].arrowImg1;
-arrowImg61.alt = projects[5]['arrow-alt'];
-arrowImg62.src = projects[5].arrowImg2;
-arrowImg62.alt = projects[5]['arrow-alt'];
-
 work6Fig.className = 'work6 work-cont work6-fig';
 work6Img.classList.add('work-img');
 work6Desc.className = 'work6 work-cont workDesc work6-desc';
@@ -405,6 +439,18 @@ listBtn.addEventListener('click', () => {
   workDescItem64.classList.toggle('hidden');
 });
 
+work6Img.src = projects[5].image;
+work2Img.alt = projects[5]['workImg-alt'];
+work6Title.textContent = projects[5].name;
+[workDescItem61.textContent,
+  workDescItem62.textContent,
+  workDescItem63.textContent] = projects[5].technologies;
+listBtn.textContent = '+1';
+arrowImg61.src = projects[5].arrowImg1;
+arrowImg61.alt = projects[5]['arrow-alt'];
+arrowImg62.src = projects[5].arrowImg2;
+arrowImg62.alt = projects[5]['arrow-alt'];
+
 // add background images
 
 const geo1 = document.createElement('div');
@@ -421,104 +467,147 @@ geo5.className = 'geo5 invisible';
 
 grid.append(geo1, geo2, geo3, geo4, geo5);
 
-// popup window script
+// open popup window script
 
-const menuBtn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu-invisible');
-const nav = document.getElementById('nav');
-const logo = document.getElementById('logo');
-const logo2 = document.getElementById('logo2');
-const closeBtn = document.createElement('button');
-const closeImg = document.createElement('img');
-const navLink = document.getElementById('nav-link-menu');
+const popupWin = document.getElementById('popup-window');
+const body = document.getElementById('body');
 
-closeBtn.classList.toggle('hidden');
-closeImg.src = 'img/ic_cross.svg';
-closeImg.alt = 'close-icon';
+function popup(n) {
+  popupWin.classList.toggle("hidden");
+  body.classList.toggle('blur');
 
-closeBtn.appendChild(closeImg);
-if (nav) {
-  nav.appendChild(closeBtn);
-}
+  const container = document.getElementById('container');
+  const smallContainer = document.createElement('main');
+  const header = document.createElement('header');
+  const headerBtn = document.createElement('button');
+  const headerImg = document.createElement('img');
+  const title = document.createElement('h2');
+  const workDescList = document.createElement('ul');
+  const workDescItem1 = document.createElement('li');
+  const workDescItem2 = document.createElement('li');
+  const workDescItem3 = document.createElement('li');
+  const gridContainer = document.createElement('section');
+  const grid = document.createElement('div');
+  const fig1 = document.createElement('figure');
+  const img1 = document.createElement('img');
+  const fig2 = document.createElement('figure');
+  const img2 = document.createElement('img');
+  const fig3 = document.createElement('figure');
+  const img3 = document.createElement('img');
+  const fig4 = document.createElement('figure');
+  const img4 = document.createElement('img');
+  const fig5 = document.createElement('figure');
+  const img5 = document.createElement('img');
+  const detailDesc = document.createElement('section');
+  const projDesc = document.createElement('p');
+  const btnContainer = document.createElement('div');
+  const btnLive = document.createElement('button');
+  const btnSource = document.createElement('button');
+  const btnDirection = document.createElement('div');
+  const btnPrev = document.createElement('button');
+  const btnNext = document.createElement('button');
 
-function displayMenu() {
-  menu.classList.toggle('hidden');
-  menuBtn.classList.toggle('hidden');
-  closeBtn.classList.toggle('hidden');
-  logo.classList.toggle('hidden');
-  logo2.classList.toggle('hidden');
-}
+  container.appendChild(smallContainer);
+  smallContainer.append(headerBtn, header, gridContainer, detailDesc);
+  headerBtn.appendChild(headerImg);
+  header.append(title, workDescList);
+  workDescList.append(workDescItem1, workDescItem2, workDescItem3);
+  gridContainer.appendChild(grid);
+  grid.append(fig1, fig2, fig3, fig4, fig5);
+  fig1.appendChild(img1);
+  fig2.appendChild(img2);
+  fig3.appendChild(img3);
+  fig4.appendChild(img4);
+  fig5.appendChild(img5);
+  detailDesc.append(projDesc, btnContainer, btnDirection);
+  btnContainer.append(btnLive, btnSource);
+  btnDirection.append(btnPrev, btnNext);
 
-function closeMenu() {
-  menu.classList.toggle('hidden');
-  menuBtn.classList.toggle('hidden');
-  closeBtn.classList.toggle('hidden');
-  logo.classList.toggle('hidden');
-  logo2.classList.toggle('hidden');
-}
+  smallContainer.className = 'small-container';
+  headerBtn.className = 'headerBtn';
+  headerBtn.setAttribute('id', 'close-popup');
+  header.className = 'header';
+  title.className = 'title';
+  workDescList.className = 'workDesc-list';
+  workDescItem1.className = 'workDesc-item';
+  workDescItem2.className = 'workDesc-item';
+  workDescItem3.className = 'workDesc-item';
+  gridContainer.className = 'grid-container';
+  grid.className = 'grid';
+  fig1.className = 'fig1';
+  fig2.className = 'fig2';
+  fig3.className = 'fig3';
+  fig4.className = 'fig4';
+  fig5.className = 'fig5';
+  img1.className = 'work-img';
+  img2.className = 'work-img';
+  img3.className = 'work-img';
+  img4.className = 'work-img';
+  img5.className = 'work-img';
+  detailDesc.className = 'detail-desc';
+  btnContainer.className = 'btn-cont';
+  btnLive.className = 'btn-live';
+  btnSource.className = 'btn-source';
+  btnDirection.className = 'direction-btn invisible';
 
-if (menuBtn) {
-  menuBtn.addEventListener('click', displayMenu);
-}
-closeBtn.addEventListener('click', closeMenu);
-if (navLink) {
-  navLink.addEventListener('click', closeMenu);
+  headerImg.src = projects[n].headerImg;
+  headerImg.alt = projects[n]['headerImg-alt'];
+  title.textContent = projects[n].name;
+  [workDescItem1.textContent,
+    workDescItem2.textContent,
+    workDescItem3.textContent] = projects[n].technologies;
+  img1.src = projects[n].image;
+  img1.alt = projects[n]['workImg-alt'];
+  img2.src = projects[n].image;
+  img2.alt = projects[n]['workImg-alt'];
+  img3.src = projects[n].image;
+  img3.alt = projects[n]['workImg-alt'];
+  img4.src = projects[n].image;
+  img4.alt = projects[n]['workImg-alt'];
+  img5.src = projects[n].image;
+  img5.alt = projects[n]['workImg-alt'];
+  projDesc.textContent = projects[n].description;
+  btnLive.textContent = 'See live';
+  btnSource.textContent = 'See source';
+  btnPrev.textContent = 'Previous project';
+  btnNext.textContent = 'Next project';
+
+  // close popup script
+
+  headerBtn.addEventListener('click', closePopupFunc);
+
+  function closePopupFunc() {
+    popupWin.classList.toggle("hidden");
+    smallContainer.classList.toggle("hidden");
+    body.classList.toggle('blur');
+  }
 }
 
 function popupWindow1() {
-  if (window.screen.width <= 768) {
-    window.open('proj1-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj1-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(0);
 }
 
-// add function
-
 function popupWindow2() {
-  if (window.screen.width <= 768) {
-    window.open('proj2-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj2-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(1);
 }
 
 function popupWindow3() {
-  if (window.screen.width <= 768) {
-    window.open('proj3-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj3-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(2);
 }
 
 function popupWindow4() {
-  if (window.screen.width <= 768) {
-    window.open('proj4-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj4-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(3);
 }
 
 function popupWindow5() {
-  if (window.screen.width <= 768) {
-    window.open('proj5-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj5-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(4);
 }
 
 function popupWindow6() {
-  if (window.screen.width <= 768) {
-    window.open('proj6-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj6-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(5);
 }
 
-if (workBtn) {
-  workBtn.addEventListener('click', popupWindow1);
-}
-
+workBtn.addEventListener('click', popupWindow1);
 work1Img.addEventListener('click', popupWindow1);
 workBtn2.addEventListener('click', popupWindow2);
 work2Img.addEventListener('click', popupWindow2);
@@ -530,5 +619,3 @@ workBtn5.addEventListener('click', popupWindow5);
 work5Img.addEventListener('click', popupWindow5);
 workBtn6.addEventListener('click', popupWindow6);
 work6Img.addEventListener('click', popupWindow6);
-
-// contact validation script
