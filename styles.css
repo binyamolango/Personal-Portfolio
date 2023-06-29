@@ -554,6 +554,7 @@ label {
 #error_message {
   color: rgb(255, 55, 0);
   font-size: larger;
+  font-family: "poppins", sans-serif;
   margin-top: 0.5rem;
 }
 
