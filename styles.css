@@ -266,7 +266,7 @@ main {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(193, 199, 208, 0.7);
+  background: rgba(149, 159, 173, 0.9);
   backdrop-filter: blur(4px);
   overflow-y: auto;
   margin: auto 0;
