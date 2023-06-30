@@ -1,13 +1,13 @@
 // store data
 const form = document.getElementById('form');
 const data = {
-    name : document.getElementById("name").value,
-    email : document.getElementById("email").value,
-    text : document.getElementById("msg").value
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  text: document.getElementById('msg').value,
 };
 
 function storeData() {
-    localStorage.setItem('form', JSON.stringify(data));
+  localStorage.setItem('form', JSON.stringify(data));
 }
 
 form.addEventListener('input', storeData);
