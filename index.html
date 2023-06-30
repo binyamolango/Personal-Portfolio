@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <main>
+<body id="body">
+    <main id="main">
         <header class="header">
             <div class="row visible" id="nav-row">
                 <a href="#" class="logo-link" id="logo"><img src="img/image_geometry_1.svg" alt="logo-image" class="logo-img"></a>
@@ -37,7 +37,7 @@
                 </nav>
             </div>
 
-            <div class="invisible">
+            <div class="invisible" id="desktop">
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#hello" class="nav-link">Hello</a></li>
@@ -64,141 +64,9 @@
         </section>
 
         <section class="work" id="portfolio">
-            <div class="grid">
-                <div class="container work0">
-                    <h2 class="title darkblue">Projects</h2>
+            <div class="big-container hidden" id="popup-window">
+                <div class="container" id="container">
                 </div>
-                <figure class="work1 work-cont work1-fig">
-                    <a href="proj1-desc.html"><img src="proj-img/Rectangle 21.svg" alt="work1-image" class="work-img"></a>
-                </figure>
-                <div class="work1 work-cont workDesc work1-desc">
-                    <div class="container">
-                        <h3>Project 1</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item">Javascript</li>
-                        </ul>
-                        <a href="proj1-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">    
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <figure class="work2 work-cont work2-fig">
-                    <a href="proj2-desc.html"><img src="proj-img/Rectangle 21 (5).svg" alt="work2-image" class="work-img"></a>
-                </figure>
-                <div class="work2 work-cont workDesc work2-desc visible">
-                    <div class="container">
-                        <h3>Project 2</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item">Javascript</li>
-                        </ul>
-                        <a href="proj2-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <figure class="work3 work-cont work3-fig">
-                    <a href="proj3-desc.html"><img src="proj-img/Rectangle 21 (1).svg" alt="work3-image" class="work-img"></a>
-                </figure>
-                <div class="work3 work-cont workDesc work3-desc visible">
-                    <div class="container">
-                        <h3>Project 3</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item">Javascript</li>
-                        </ul>
-                        <a href="proj3-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <figure class="work4 work-cont work4-fig">
-                    <a href="proj4-desc.html"><img src="proj-img/Rectangle 21 (2).svg" alt="work4-image" class="work-img"></a>
-                </figure>
-                <div class="work4 work-cont workDesc work4-desc visible">
-                    <div class="container">
-                        <h3>Project 4</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item">Javascript</li>
-                        </ul>
-                        <a href="proj4-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <figure class="work5 work-cont work5-fig">
-                    <a href="proj5-desc.html"><img src="proj-img/Rectangle 21 (3).svg" alt="work5-image" class="work-img"></a>
-                </figure>
-                <div class="work5 work-cont workDesc work5-desc visible">
-                    <div class="container">
-                        <h3>Project 5</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item">Javascript</li>
-                        </ul>
-                        <a href="proj5-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <figure class="work6 work-cont work6-fig">
-                    <a href="proj6-desc.html"><img src="proj-img/Rectangle 21 (4).svg" alt="work6-image" class="work-img"></a>
-                </figure>
-                <div class="work6 work-cont workDesc work6-desc">
-                    <div class="container">
-                        <h3>Project 6</h3>
-                        <ul class="workDesc-list">
-                            <li class="workDesc-item">HTML/CSS</li>
-                            <li class="workDesc-item">Ruby on Rails</li>
-                            <li class="workDesc-item visible">Javascript</li>
-                            <li class="workDesc-item invisible"><button>+1</button></li>
-                        </ul>
-                        <a href="proj6-desc.html">
-                            <button class="workBtn btn-cont">
-                                See this project
-                                <img src="img/arrow.svg" alt="arrow-image" class="arrow-img visible">
-                                <img src="img/Union.svg" alt="arrow-image" class="arrow-img invisible">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="geo1 invisible"></div>
-                <div class="geo2 invisible"></div>
-                <div class="geo3 invisible"></div>
-                <div class="geo4 invisible"></div>
-                <div class="geo5 invisible"></div>
             </div>
         </section>
 
@@ -288,6 +156,6 @@
         </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

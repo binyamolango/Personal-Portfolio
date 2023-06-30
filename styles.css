@@ -16,7 +16,7 @@ img:hover {
 }
 
 button {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
   cursor: pointer;
   border: none;
   background-color: white;
@@ -252,6 +252,176 @@ main {
   align-items: center;
 }
 
+/* project description popup style */
+.blur {
+  overflow-y: hidden;
+}
+
+#popup-window {
+  z-index: 15;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  backdrop-filter: blur(12px);
+  overflow-y: auto;
+  margin: auto 0;
+}
+
+.big-container a {
+  text-decoration: none;
+}
+
+.big-container ul {
+  list-style: none;
+}
+
+.big-container li {
+  background: #fff;
+}
+
+.big-container img {
+  max-width: 100%;
+}
+
+.big-container button {
+  cursor: pointer;
+  background: none;
+}
+
+.big-container .invisible {
+  display: none;
+}
+
+.big-container .container {
+  width: 90%;
+  margin: 5% auto;
+  max-width: 500px;
+  min-width: 240px;
+}
+
+.big-container .header {
+  padding-top: 5px;
+}
+
+.big-container .headerBtn {
+  float: right;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.big-container .headerBtn img {
+  width: 100%;
+}
+
+.big-container .container .title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.big-container .workDesc-list {
+  display: flex;
+  gap: 10px;
+  margin: 23px 0 16px 0;
+}
+
+.big-container .workDesc-item {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.646rem;
+  line-height: 80%;
+  color: #1a2236;
+  border: 0.516669px solid #1a2236;
+  padding: 6px 10px;
+}
+
+.big-container .work-image-all {
+  width: 100%;
+}
+
+.big-container .work-image-all:hover {
+  transform: none;
+}
+
+.big-container .detail-desc p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #1a2236;
+  margin: 29px 0;
+}
+
+.big-container .btn-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.big-container .btn-cont .btn-desc {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-align: center;
+  color: #1a2236;
+  background: #fff;
+  border: 1px solid #1a2236;
+  padding: 12px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.big-container .btn-cont .btn-desc img {
+  float: right;
+  margin-top: 3px;
+  margin-right: 21px;
+}
+
+.big-container .btn-cont .btn-desc:hover {
+  background: #1a2236;
+  color: #fff;
+  border: 1px solid #fff;
+
+  .visible {
+    display: none;
+  }
+
+  .invisible {
+    display: block;
+  }
+}
+
+.big-container .btn-cont .btn-desc:active {
+  border: 2px solid #fff;
+}
+
+.foot-row button {
+  background: none;
+  border: none;
+}
+
+.foot-row button:active {
+  border: 2px solid #1a2236;
+}
+
+/* project description style end */
+
 .skill-pack {
   display: flex;
   flex-direction: column;
@@ -354,6 +524,10 @@ label {
   padding: 14px 16px;
 }
 
+#email {
+  transform: lowercase;
+}
+
 .form-col {
   display: flex;
   flex-direction: column;
@@ -384,15 +558,6 @@ label {
   gap: 14px;
   align-items: center;
   margin-bottom: 25px;
-}
-
-.foot-row button {
-  background: none;
-  border: none;
-}
-
-.foot-row button:active {
-  border: 2px solid #1a2236;
 }
 
 label:hover {
@@ -706,6 +871,14 @@ label:hover {
     margin: 60px 0;
   }
 
+  .big-container .invisible {
+    display: block;
+  }
+
+  .big-container .visible {
+    display: none;
+  }
+
   .workBtn:hover {
     background: #1a2236;
     color: #fff;
@@ -723,6 +896,170 @@ label:hover {
     border: 2.5px solid #fff;
   }
 
+  /* project description popup style */
+
+  #popup-window {
+    background: rgba(26, 34, 54, 0.95);
+    margin: 0 auto;
+  }
+
+  .big-container {
+    max-width: 1640px;
+    padding: 4% 0;
+    margin: 0 auto;
+  }
+
+  .big-container .container {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 10px 20px #00000040;
+    height: 1750px;
+    max-width: 1440px;
+  }
+
+  .big-container .small-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+
+  .big-container .header {
+    padding: 0;
+  }
+
+  .big-container .headerBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .big-container .headerBtn img {
+    width: 100%;
+  }
+
+  .about .title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.875rem;
+    line-height: 100%;
+  }
+
+  .contact .title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.875rem;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .big-container .container .title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 80%;
+    margin-top: 0;
+  }
+
+  .big-container .workDesc-list {
+    margin: 32px 0 40px 0;
+    gap: 20px;
+  }
+
+  .big-container .workDesc-item {
+    padding: 0.75em 1.25em;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 80%;
+  }
+
+  .big-container .detail-desc {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .big-container .detail-desc p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+
+  .big-container .detail-desc p:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .big-container .btn-cont {
+    width: 80%;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    max-width: 750px;
+  }
+
+  .big-container .btn-cont .btn-desc {
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+    min-width: 200px;
+  }
+
+  .big-container .btn-cont .btn-desc .visible {
+    display: block;
+  }
+
+  .big-container .btn-cont .btn-desc .invisible {
+    display: none;
+  }
+
+  .big-container .btn-cont .btn-desc:hover {
+    background: #1a2236;
+    color: #fff;
+    border: 1px solid #fff;
+
+    .visible {
+      display: none;
+    }
+
+    .invisible {
+      display: block;
+    }
+  }
+
+  .big-container .direction-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+
+  .big-container .direction-btn button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 27px;
+    color: #1a2236;
+    background-color: #fff;
+    border: none;
+    background-repeat: no-repeat;
+  }
+
+  .big-container .direction-btn button:first-of-type {
+    padding-left: 2.5em;
+    background-image: url(img/Union3.svg);
+    background-position: left center;
+  }
+
+  .big-container .direction-btn button:last-of-type {
+    padding-right: 2.5em;
+    background-image: url(img/Union4.svg);
+    background-position: right center;
+  }
+
+  /* project description popup style end */
+
   .about {
     display: flex;
     flex-direction: row-reverse;
@@ -739,14 +1076,6 @@ label:hover {
     padding-top: 28px;
     width: 100%;
     margin-left: 96px;
-  }
-
-  .about .title {
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 6.875rem;
-    line-height: 100%;
   }
 
   .about .par-desc {
@@ -814,15 +1143,6 @@ label:hover {
     max-width: 670px;
     padding-top: 128px;
     margin-bottom: -175px;
-  }
-
-  .contact .title {
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 6.875rem;
-    line-height: 100%;
-    text-align: center;
   }
 
   .contact .par-desc {
