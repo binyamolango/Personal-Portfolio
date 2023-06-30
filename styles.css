@@ -266,8 +266,8 @@ main {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(149, 159, 173, 0.9);
-  backdrop-filter: blur(4px);
+  background: #fff;
+  backdrop-filter: blur(12px);
   overflow-y: auto;
   margin: auto 0;
 }
@@ -278,6 +278,10 @@ main {
 
 .big-container ul {
   list-style: none;
+}
+
+.big-container li {
+  background: #fff;
 }
 
 .big-container img {
@@ -301,14 +305,14 @@ main {
 }
 
 .big-container .header {
-  padding-top: 2.5em;
+  padding-top: 5px;
 }
 
 .big-container .headerBtn {
   float: right;
   border: none;
-  width: 1.25em;
-  height: 1.25em;
+  width: 20px;
+  height: 20px;
 }
 
 .big-container .headerBtn img {
@@ -338,46 +342,15 @@ main {
   line-height: 80%;
   color: #1a2236;
   border: 0.516669px solid #1a2236;
-  padding: 0.375em 0.625em;
+  padding: 6px 10px;
 }
 
-.big-container .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80% 20%;
-  height: 202.7px;
-  width: 100%;
-  min-width: 278.75px;
-  max-width: 360px;
-}
-
-.big-container .grid img {
+.big-container .work-image-all {
   width: 100%;
 }
 
-.big-container .fig1 {
-  grid-column: 1 / span 4;
-  grid-row: 1 / 2;
-}
-
-.big-container .fig2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.big-container .fig3 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.big-container .fig4 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-.big-container .fig5 {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
+.big-container .work-image-all:hover {
+  transform: none;
 }
 
 .big-container .detail-desc p {
@@ -409,17 +382,29 @@ main {
   color: #1a2236;
   background: #fff;
   border: 1px solid #1a2236;
-  padding: 0.75em 0;
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
+  padding: 12px 0;
   cursor: pointer;
   width: 100%;
+}
+
+.big-container .btn-cont .btn-desc img {
+  float: right;
+  margin-top: 3px;
+  margin-right: 21px;
 }
 
 .big-container .btn-cont .btn-desc:hover {
   background: #1a2236;
   color: #fff;
   border: 1px solid #fff;
+
+  .visible {
+    display: none;
+  }
+
+  .invisible {
+    display: block;
+  }
 }
 
 .big-container .btn-cont .btn-desc:active {
@@ -433,14 +418,6 @@ main {
 
 .foot-row button:active {
   border: 2px solid #1a2236;
-}
-
-.big-container .btn-cont button:first-of-type {
-  background-image: url(img/Union2.svg);
-}
-
-.big-container .btn-cont button:last-of-type {
-  background-image: url(img/Vector.svg);
 }
 
 /* project description style end */
@@ -928,9 +905,12 @@ label:hover {
 
   /* project description popup style */
 
-  .big-container {
+  #popup-window {
     background: rgba(26, 34, 54, 0.95);
-    backdrop-filter: blur(12px);
+    margin: 0 auto;
+  }
+
+  .big-container {
     max-width: 1640px;
     padding: 4% 0;
     margin: 0 auto;
@@ -941,7 +921,7 @@ label:hover {
     margin: 0 auto;
     background: #fff;
     box-shadow: 0 10px 20px #00000040;
-    height: 1720px;
+    height: 1750px;
     max-width: 1440px;
   }
 
@@ -987,6 +967,7 @@ label:hover {
     font-weight: 700;
     font-size: 3.75rem;
     line-height: 80%;
+    margin-top: 0;
   }
 
   .big-container .workDesc-list {
@@ -1001,23 +982,19 @@ label:hover {
     line-height: 80%;
   }
 
-  .big-container .grid {
-    height: 757.32px;
-    width: 100%;
-    max-width: 1340px;
-    margin: 0 auto;
-  }
-
   .big-container .detail-desc {
     width: 60%;
     margin: 0 auto;
-    margin-top: 68.68px;
+    margin-top: 80px;
   }
 
   .big-container .detail-desc p {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 27px;
+  }
+
+  .big-container .detail-desc p:last-of-type {
     margin-bottom: 40px;
   }
 
@@ -1029,10 +1006,33 @@ label:hover {
     max-width: 750px;
   }
 
-  .big-container .btn-cont button {
+  .big-container .btn-cont .btn-desc {
     width: 100%;
     text-align: left;
-    padding-left: 1.5625em;
+    padding-left: 25px;
+    min-width: 200px;
+  }
+
+  .big-container .btn-cont .btn-desc .visible {
+    display: block;
+  }
+
+  .big-container .btn-cont .btn-desc .invisible {
+    display: none;
+  }
+
+  .big-container .btn-cont .btn-desc:hover {
+    background: #1a2236;
+    color: #fff;
+    border: 1px solid #fff;
+
+    .visible {
+      display: none;
+    }
+
+    .invisible {
+      display: block;
+    }
   }
 
   .big-container .direction-btn {

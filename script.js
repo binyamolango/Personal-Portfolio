@@ -46,8 +46,11 @@ if (navLink) {
 
 const projects = [{
   name: 'Project 1',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21.svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work1-image',
   'headerImg-alt': 'close-icon',
@@ -58,12 +61,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 2',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (5).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work2-image',
   'headerImg-alt': 'close-icon',
@@ -74,12 +86,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 3',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (1).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work3-image',
   'headerImg-alt': 'close-icon',
@@ -90,12 +111,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 4',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (2).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work4-image',
   'headerImg-alt': 'close-icon',
@@ -106,12 +136,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 5',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (3).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work5-image',
   'headerImg-alt': 'close-icon',
@@ -122,12 +161,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 6',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (4).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work6-image',
   'headerImg-alt': 'close-icon',
@@ -138,11 +186,15 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }];
-
-export default projects;
 
 // Project 1 elements and values
 
@@ -486,41 +538,33 @@ function popup(n) {
   const workDescItem1 = document.createElement('li');
   const workDescItem2 = document.createElement('li');
   const workDescItem3 = document.createElement('li');
-  const gridContainer = document.createElement('section');
-  const grid = document.createElement('div');
-  const fig1 = document.createElement('figure');
-  const img1 = document.createElement('img');
-  const fig2 = document.createElement('figure');
-  const img2 = document.createElement('img');
-  const fig3 = document.createElement('figure');
-  const img3 = document.createElement('img');
-  const fig4 = document.createElement('figure');
-  const img4 = document.createElement('img');
-  const fig5 = document.createElement('figure');
-  const img5 = document.createElement('img');
+  const workImage = document.createElement('img');
+  const workImage2 = document.createElement('img');
   const detailDesc = document.createElement('section');
-  const projDesc = document.createElement('p');
+  const projDesc1 = document.createElement('p');
+  const projDesc2 = document.createElement('p');
   const btnContainer = document.createElement('div');
   const btnLive = document.createElement('button');
+  const liveText = document.createTextNode(projects[n].liveText);
+  const liveImg1 = document.createElement('img');
+  const liveImg2 = document.createElement('img');
   const btnSource = document.createElement('button');
+  const sourceText = document.createTextNode(projects[n].sourceText);
+  const sourceImg1 = document.createElement('img');
+  const sourceImg2 = document.createElement('img');
   const btnDirection = document.createElement('div');
   const btnPrev = document.createElement('button');
   const btnNext = document.createElement('button');
 
   container.appendChild(smallContainer);
-  smallContainer.append(headerBtn, header, gridContainer, detailDesc);
+  smallContainer.append(headerBtn, header, workImage, workImage2, detailDesc);
   headerBtn.appendChild(headerImg);
   header.append(title, workDescList);
   workDescList.append(workDescItem1, workDescItem2, workDescItem3);
-  gridContainer.appendChild(grid);
-  grid.append(fig1, fig2, fig3, fig4, fig5);
-  fig1.appendChild(img1);
-  fig2.appendChild(img2);
-  fig3.appendChild(img3);
-  fig4.appendChild(img4);
-  fig5.appendChild(img5);
-  detailDesc.append(projDesc, btnContainer, btnDirection);
+  detailDesc.append(projDesc1, projDesc2, btnContainer, btnDirection);
   btnContainer.append(btnLive, btnSource);
+  btnLive.append(liveText, liveImg1, liveImg2);
+  btnSource.append(sourceText, sourceImg1, sourceImg2);
   btnDirection.append(btnPrev, btnNext);
 
   smallContainer.className = 'small-container';
@@ -532,22 +576,16 @@ function popup(n) {
   workDescItem1.className = 'workDesc-item';
   workDescItem2.className = 'workDesc-item';
   workDescItem3.className = 'workDesc-item';
-  gridContainer.className = 'grid-container';
-  grid.className = 'grid';
-  fig1.className = 'fig1';
-  fig2.className = 'fig2';
-  fig3.className = 'fig3';
-  fig4.className = 'fig4';
-  fig5.className = 'fig5';
-  img1.className = 'work-img';
-  img2.className = 'work-img';
-  img3.className = 'work-img';
-  img4.className = 'work-img';
-  img5.className = 'work-img';
+  workImage.className = 'work-image-all visible';
+  workImage2.className = 'work-image-all invisible';
   detailDesc.className = 'detail-desc';
   btnContainer.className = 'btn-cont';
   btnLive.className = 'btn-desc';
+  liveImg1.className = 'visible';
+  liveImg2.className = 'invisible';
   btnSource.className = 'btn-desc';
+  sourceImg1.className = 'visible';
+  sourceImg2.className = 'invisible';
   btnDirection.className = 'direction-btn invisible';
 
   headerImg.src = projects[n].headerImg;
@@ -556,19 +594,14 @@ function popup(n) {
   [workDescItem1.textContent,
     workDescItem2.textContent,
     workDescItem3.textContent] = projects[n].technologies;
-  img1.src = projects[n].image;
-  img1.alt = projects[n]['workImg-alt'];
-  img2.src = projects[n].image;
-  img2.alt = projects[n]['workImg-alt'];
-  img3.src = projects[n].image;
-  img3.alt = projects[n]['workImg-alt'];
-  img4.src = projects[n].image;
-  img4.alt = projects[n]['workImg-alt'];
-  img5.src = projects[n].image;
-  img5.alt = projects[n]['workImg-alt'];
-  projDesc.textContent = projects[n].description;
-  btnLive.textContent = 'See live';
-  btnSource.textContent = 'See source';
+  workImage.src = projects[n].imageAll;
+  workImage2.src = projects[n].imageAll2;
+  projDesc1.textContent = projects[n].description1;
+  projDesc2.textContent = projects[n].description2;
+  liveImg1.src = projects[n].liveImg1;
+  liveImg2.src = projects[n].liveImg2;
+  sourceImg1.src = projects[n].sourceImg1;
+  sourceImg2.src = projects[n].sourceImg2;
   btnPrev.textContent = 'Previous project';
   btnNext.textContent = 'Next project';
 
