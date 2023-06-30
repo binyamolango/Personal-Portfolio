@@ -1,8 +1,9 @@
-document.getElementById('form').addEventListener('submit', (e) => {
+const form = document.getElementById('form');
+
+function emailValidation(e) {
   const emailVal = document.getElementById('email').value;
   const emailErr = document.getElementById('error_message');
   const validate = emailVal.toLowerCase();
-  const form = document.getElementById('form');
   if (emailVal === validate) {
     emailErr.textContent = '';
     form.submit();
@@ -10,4 +11,6 @@ document.getElementById('form').addEventListener('submit', (e) => {
     e.preventDefault();
     emailErr.textContent = 'Please write your email in lower case!';
   }
-});
+}
+
+form.addEventListener('submit', emailValidation);

@@ -1,7 +1,56 @@
+// mobile menu script
+
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu-invisible');
+const nav = document.getElementById('nav');
+const logo = document.getElementById('logo');
+const logo2 = document.getElementById('logo2');
+const closeBtn = document.createElement('button');
+const closeImg = document.createElement('img');
+const navLink = document.getElementById('nav-link-menu');
+
+closeBtn.classList.toggle('hidden');
+closeImg.src = 'img/ic_cross.svg';
+closeImg.alt = 'close-icon';
+
+closeBtn.appendChild(closeImg);
+if (nav) {
+  nav.appendChild(closeBtn);
+}
+
+function displayMenu() {
+  menu.classList.toggle('hidden');
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('hidden');
+  logo.classList.toggle('hidden');
+  logo2.classList.toggle('hidden');
+}
+
+function closeMenu() {
+  menu.classList.toggle('hidden');
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('hidden');
+  logo.classList.toggle('hidden');
+  logo2.classList.toggle('hidden');
+}
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', displayMenu);
+}
+closeBtn.addEventListener('click', closeMenu);
+if (navLink) {
+  navLink.addEventListener('click', closeMenu);
+}
+
+// popup window script
+
 const projects = [{
   name: 'Project 1',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21.svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work1-image',
   'headerImg-alt': 'close-icon',
@@ -12,12 +61,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 2',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (5).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work2-image',
   'headerImg-alt': 'close-icon',
@@ -28,12 +86,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 3',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (1).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work3-image',
   'headerImg-alt': 'close-icon',
@@ -44,12 +111,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 4',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (2).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work4-image',
   'headerImg-alt': 'close-icon',
@@ -60,12 +136,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 5',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (3).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work5-image',
   'headerImg-alt': 'close-icon',
@@ -76,12 +161,21 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }, {
   name: 'Project 6',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   image: 'proj-img/Rectangle 21 (4).svg',
+  imageAll: 'img/work-imgAll.svg',
+  imageAll2: 'img/imageAll2.svg',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work6-image',
   'headerImg-alt': 'close-icon',
@@ -92,11 +186,15 @@ const projects = [{
   'arrow-alt': 'arrow-image',
   linkToLive: '',
   linkToSource: '',
+  liveImg1: 'img/Union2.svg',
+  liveImg2: 'img/ic_link_teal.svg',
+  sourceImg1: 'img/Vector.svg',
+  sourceImg2: 'img/github-black.svg',
+  liveText: 'See live',
+  sourceText: 'See source',
   previous: 'Previous project',
   next: 'Next project',
 }];
-
-export default projects;
 
 // Project 1 elements and values
 
@@ -365,18 +463,6 @@ const workBtnDesc6 = document.createTextNode(projects[5].buttonDesc);
 const arrowImg61 = document.createElement('img');
 const arrowImg62 = document.createElement('img');
 
-work6Img.src = projects[5].image;
-work2Img.alt = projects[5]['workImg-alt'];
-work6Title.textContent = projects[5].name;
-[workDescItem61.textContent,
-  workDescItem62.textContent,
-  workDescItem63.textContent] = projects[5].technologies;
-listBtn.textContent = '+1';
-arrowImg61.src = projects[5].arrowImg1;
-arrowImg61.alt = projects[5]['arrow-alt'];
-arrowImg62.src = projects[5].arrowImg2;
-arrowImg62.alt = projects[5]['arrow-alt'];
-
 work6Fig.className = 'work6 work-cont work6-fig';
 work6Img.classList.add('work-img');
 work6Desc.className = 'work6 work-cont workDesc work6-desc';
@@ -405,6 +491,18 @@ listBtn.addEventListener('click', () => {
   workDescItem64.classList.toggle('hidden');
 });
 
+work6Img.src = projects[5].image;
+work2Img.alt = projects[5]['workImg-alt'];
+work6Title.textContent = projects[5].name;
+[workDescItem61.textContent,
+  workDescItem62.textContent,
+  workDescItem63.textContent] = projects[5].technologies;
+listBtn.textContent = '+1';
+arrowImg61.src = projects[5].arrowImg1;
+arrowImg61.alt = projects[5]['arrow-alt'];
+arrowImg62.src = projects[5].arrowImg2;
+arrowImg62.alt = projects[5]['arrow-alt'];
+
 // add background images
 
 const geo1 = document.createElement('div');
@@ -421,101 +519,128 @@ geo5.className = 'geo5 invisible';
 
 grid.append(geo1, geo2, geo3, geo4, geo5);
 
-// popup window script
+// open popup window script
 
-const menuBtn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu-invisible');
-const nav = document.getElementById('nav');
-const logo = document.getElementById('logo');
-const logo2 = document.getElementById('logo2');
-const closeBtn = document.createElement('button');
-const closeImg = document.createElement('img');
-const navLink = document.getElementById('nav-link-menu');
+const popupWin = document.getElementById('popup-window');
+const body = document.getElementById('body');
 
-closeBtn.classList.toggle('hidden');
-closeImg.src = 'img/ic_cross.svg';
-closeImg.alt = 'close-icon';
+function popup(n) {
+  popupWin.classList.toggle('hidden');
+  body.classList.toggle('blur');
 
-closeBtn.appendChild(closeImg);
-if (nav) {
-  nav.appendChild(closeBtn);
-}
+  const container = document.getElementById('container');
+  const smallContainer = document.createElement('main');
+  const header = document.createElement('header');
+  const headerBtn = document.createElement('button');
+  const headerImg = document.createElement('img');
+  const title = document.createElement('h2');
+  const workDescList = document.createElement('ul');
+  const workDescItem1 = document.createElement('li');
+  const workDescItem2 = document.createElement('li');
+  const workDescItem3 = document.createElement('li');
+  const workImage = document.createElement('img');
+  const workImage2 = document.createElement('img');
+  const detailDesc = document.createElement('section');
+  const projDesc1 = document.createElement('p');
+  const projDesc2 = document.createElement('p');
+  const btnContainer = document.createElement('div');
+  const btnLive = document.createElement('button');
+  const liveText = document.createTextNode(projects[n].liveText);
+  const liveImg1 = document.createElement('img');
+  const liveImg2 = document.createElement('img');
+  const btnSource = document.createElement('button');
+  const sourceText = document.createTextNode(projects[n].sourceText);
+  const sourceImg1 = document.createElement('img');
+  const sourceImg2 = document.createElement('img');
+  const btnDirection = document.createElement('div');
+  const btnPrev = document.createElement('button');
+  const btnNext = document.createElement('button');
 
-function displayMenu() {
-  menu.classList.toggle('hidden');
-  menuBtn.classList.toggle('hidden');
-  closeBtn.classList.toggle('hidden');
-  logo.classList.toggle('hidden');
-  logo2.classList.toggle('hidden');
-}
+  container.appendChild(smallContainer);
+  smallContainer.append(headerBtn, header, workImage, workImage2, detailDesc);
+  headerBtn.appendChild(headerImg);
+  header.append(title, workDescList);
+  workDescList.append(workDescItem1, workDescItem2, workDescItem3);
+  detailDesc.append(projDesc1, projDesc2, btnContainer, btnDirection);
+  btnContainer.append(btnLive, btnSource);
+  btnLive.append(liveText, liveImg1, liveImg2);
+  btnSource.append(sourceText, sourceImg1, sourceImg2);
+  btnDirection.append(btnPrev, btnNext);
 
-function closeMenu() {
-  menu.classList.toggle('hidden');
-  menuBtn.classList.toggle('hidden');
-  closeBtn.classList.toggle('hidden');
-  logo.classList.toggle('hidden');
-  logo2.classList.toggle('hidden');
-}
+  smallContainer.className = 'small-container';
+  headerBtn.className = 'headerBtn';
+  headerBtn.setAttribute('id', 'close-popup');
+  header.className = 'header';
+  title.className = 'title';
+  workDescList.className = 'workDesc-list';
+  workDescItem1.className = 'workDesc-item';
+  workDescItem2.className = 'workDesc-item';
+  workDescItem3.className = 'workDesc-item';
+  workImage.className = 'work-image-all visible';
+  workImage2.className = 'work-image-all invisible';
+  detailDesc.className = 'detail-desc';
+  btnContainer.className = 'btn-cont';
+  btnLive.className = 'btn-desc';
+  liveImg1.className = 'visible';
+  liveImg2.className = 'invisible';
+  btnSource.className = 'btn-desc';
+  sourceImg1.className = 'visible';
+  sourceImg2.className = 'invisible';
+  btnDirection.className = 'direction-btn invisible';
 
-if (menuBtn) {
-  menuBtn.addEventListener('click', displayMenu);
-}
-closeBtn.addEventListener('click', closeMenu);
-if (navLink) {
-  navLink.addEventListener('click', closeMenu);
+  headerImg.src = projects[n].headerImg;
+  headerImg.alt = projects[n]['headerImg-alt'];
+  title.textContent = projects[n].name;
+  [workDescItem1.textContent,
+    workDescItem2.textContent,
+    workDescItem3.textContent] = projects[n].technologies;
+  workImage.src = projects[n].imageAll;
+  workImage2.src = projects[n].imageAll2;
+  projDesc1.textContent = projects[n].description1;
+  projDesc2.textContent = projects[n].description2;
+  liveImg1.src = projects[n].liveImg1;
+  liveImg2.src = projects[n].liveImg2;
+  sourceImg1.src = projects[n].sourceImg1;
+  sourceImg2.src = projects[n].sourceImg2;
+  btnPrev.textContent = 'Previous project';
+  btnNext.textContent = 'Next project';
+
+  // close popup script
+
+  function closePopupFunc() {
+    popupWin.classList.toggle('hidden');
+    smallContainer.classList.toggle('hidden');
+    body.classList.toggle('blur');
+  }
+
+  headerBtn.addEventListener('click', closePopupFunc);
 }
 
 function popupWindow1() {
-  if (window.screen.width <= 768) {
-    window.open('proj1-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj1-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(0);
 }
 
 function popupWindow2() {
-  if (window.screen.width <= 768) {
-    window.open('proj2-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj2-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(1);
 }
 
 function popupWindow3() {
-  if (window.screen.width <= 768) {
-    window.open('proj3-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj3-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(2);
 }
 
 function popupWindow4() {
-  if (window.screen.width <= 768) {
-    window.open('proj4-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj4-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(3);
 }
 
 function popupWindow5() {
-  if (window.screen.width <= 768) {
-    window.open('proj5-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj5-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(4);
 }
 
 function popupWindow6() {
-  if (window.screen.width <= 768) {
-    window.open('proj6-desc.html', 'popUp', 'width=400, height=400');
-  } else {
-    window.open('proj6-desc.html', 'popUp', 'width=1200, height=1000');
-  }
+  popup(5);
 }
 
-if (workBtn) {
-  workBtn.addEventListener('click', popupWindow1);
-}
+workBtn.addEventListener('click', popupWindow1);
 work1Img.addEventListener('click', popupWindow1);
 workBtn2.addEventListener('click', popupWindow2);
 work2Img.addEventListener('click', popupWindow2);
@@ -527,5 +652,3 @@ workBtn5.addEventListener('click', popupWindow5);
 work5Img.addEventListener('click', popupWindow5);
 workBtn6.addEventListener('click', popupWindow6);
 work6Img.addEventListener('click', popupWindow6);
-
-// contact validation script
