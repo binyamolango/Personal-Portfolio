@@ -5,3 +5,7 @@ const data = {
     email : document.getElementById("email").value,
     text : document.getElementById("msg").value
 };
+
+function storeData() {
+    localStorage.setItem('form', JSON.stringify(data));
+}
