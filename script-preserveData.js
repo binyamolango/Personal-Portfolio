@@ -1,21 +1,20 @@
 // store data
 
-function saveData() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var text = document.getElementById("msg").value;
+const form = document.getElementById('form');
+const data = {
+    name : document.getElementById("name").value,
+    email : document.getElementById("email").value,
+    text : document.getElementById("msg").value
+};
 
-    localStorage.setItem("myName", name);
-    localStorage.setItem("myEmail", email);
-    localStorage.setItem("myText", text);
+function storeData() {
+    localStorage.setItem('form', JSON.stringify(data));
 }
 
-function loadData() {
-    var myName = localStorage.getItem("myName");
-    var myEmail = localStorage.getItem("myEmail");
-    var myText = localStorage.getItem("myText");
+form.addEventListener('input', storeData);
 
-    document.getElementById("name").innerHTML = myName;
-    document.getElementById("email").innerHTML = myEmail;
-    document.getElementById("msg").innerHTML = myText;
-}
+const formObj = JSON.parse(localStorage.getItem('form'));
+
+document.getElementById('name').value = formObj.name;
+document.getElementById('email').value = formObj.email;
+document.getElementById('msg').value = formObj.text;
