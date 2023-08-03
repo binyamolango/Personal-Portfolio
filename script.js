@@ -48,9 +48,9 @@ const projects = [{
   name: 'Project 1',
   description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
   description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: 'proj-img/Rectangle 21.svg',
-  imageAll: 'img/work-imgAll.svg',
-  imageAll2: 'img/imageAll2.svg',
+  image: './Screenshots/jazz-concert-project/Screenshot 2023-08-03 093319.png',
+  imageAll: './Screenshots/jazz-concert-project/Screenshot 2023-08-03 093319.png',
+  imageAll2: './Screenshots/jazz-concert-project/Screenshot 2023-08-03 093319.png',
   headerImg: 'img/ic_cross.svg',
   'workImg-alt': 'work1-image',
   'headerImg-alt': 'close-icon',
@@ -59,8 +59,8 @@ const projects = [{
   arrowImg1: 'img/arrow.svg',
   arrowImg2: 'img/Union.svg',
   'arrow-alt': 'arrow-image',
-  linkToLive: '',
-  linkToSource: '',
+  linkToLive: 'https://binyamolango.github.io/jazz-concert-capstone-project/',
+  linkToSource: 'https://github.com/binyamolango/jazz-concert-capstone-project',
   liveImg1: 'img/Union2.svg',
   liveImg2: 'img/ic_link_teal.svg',
   sourceImg1: 'img/Vector.svg',
@@ -544,10 +544,12 @@ function popup(n) {
   const projDesc1 = document.createElement('p');
   const projDesc2 = document.createElement('p');
   const btnContainer = document.createElement('div');
+  const anchorLive = document.createElement('a');
   const btnLive = document.createElement('button');
   const liveText = document.createTextNode(projects[n].liveText);
   const liveImg1 = document.createElement('img');
   const liveImg2 = document.createElement('img');
+  const anchorSource = document.createElement('a');
   const btnSource = document.createElement('button');
   const sourceText = document.createTextNode(projects[n].sourceText);
   const sourceImg1 = document.createElement('img');
@@ -562,7 +564,9 @@ function popup(n) {
   header.append(title, workDescList);
   workDescList.append(workDescItem1, workDescItem2, workDescItem3);
   detailDesc.append(projDesc1, projDesc2, btnContainer, btnDirection);
-  btnContainer.append(btnLive, btnSource);
+  btnContainer.append(anchorLive, anchorSource);
+  anchorLive.appendChild(btnLive);
+  anchorSource.appendChild(btnSource);
   btnLive.append(liveText, liveImg1, liveImg2);
   btnSource.append(sourceText, sourceImg1, sourceImg2);
   btnDirection.append(btnPrev, btnNext);
@@ -598,6 +602,10 @@ function popup(n) {
   workImage2.src = projects[n].imageAll2;
   projDesc1.textContent = projects[n].description1;
   projDesc2.textContent = projects[n].description2;
+  anchorLive.href = projects[n].linkToLive;
+  anchorSource.href = projects[n].linkToSource;
+  anchorLive.setAttribute('target', '_blank');
+  anchorSource.setAttribute('target', '_blank');
   liveImg1.src = projects[n].liveImg1;
   liveImg2.src = projects[n].liveImg2;
   sourceImg1.src = projects[n].sourceImg1;

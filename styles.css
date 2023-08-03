@@ -1139,7 +1139,7 @@ label:hover {
     background-position: left top;
     background-repeat: no-repeat;
     min-width: 1496px;
-    max-width: 2440px;
+    /* max-width: 2440px; */
     margin: 0 auto;
     margin-top: 148px;
   }
@@ -1190,7 +1190,7 @@ label:hover {
   .footer {
     height: 125px;
     min-width: 1490px;
-    max-width: 2440px;
+    /* max-width: 2440px; */
     margin: 0 auto;
     margin-top: -1px;
   }
